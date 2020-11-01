@@ -1,2 +1,2 @@
 # santoshdbhosale.github.io
-Understanding the Complexicity of Proteome
+Understanding the complexicity of proteome
