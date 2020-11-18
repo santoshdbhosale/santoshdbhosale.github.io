@@ -10,7 +10,7 @@ Nevertheless, atherosclerotic process may remain asymptomatic for several decade
 To gain insights into the pathophysiology of pre-clinical atherosclerosis and identify novel biomarkers, we conducted the [serum proteomics measurements](https://www.nature.com/articles/s41598-018-27265-9#Sec1) on the unique sample set of participants recruited in [The Cardiovascular Risk in Young Finns Study](https://youngfinnsstudy.utu.fi/studydesign.html). 
 We analyzed depleted serum samples from the subjects in whom early signs of plaques were discerned together with matched controls. 
 
-The profiling results indicated differential abundance of set of proteins. 
+The profiling results indicated differential abundances in a set of proteins. 
 Furthermore, selected reaction monitoring mass spectrometry analysis were performed on undepleted serum samples to verify the observed differences. 
 Finally, machine learning analysis identified a panel of three proteins (Fibulin 1 proteoform C, Apolipoprotein E and Cadherin-13) which segregated the cases from controls with best discrimination. 
 
