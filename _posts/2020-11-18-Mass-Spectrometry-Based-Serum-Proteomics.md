@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Protocol for Mass Spectrometry Based Plasma/Serum Proteomics"
-date: 2020-11-11
+date: 2020-11-18
 ---
 I really like Methods in Molecular Biology book series. They publish step by step protocols with detailed information on materials and methods to carry out the experiment in a reproducible manner. In particular notes section provides useful tip and troubleshooting guide.
 
