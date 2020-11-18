@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Serum Proteomics Premature Carotid Atherosclerosis"
+title: "Identification of Serum Proteins as Biomarkers for Premature Carotid Atherosclerosis"
 date: 2020-11-11
 ---
 Atherosclerotic cardiovascular diseases are the major causes of mortality and morbidity in developed world. Thickening of the carotid arterial wall (plaque formation) are indicative of active atherosclerotic process. 
