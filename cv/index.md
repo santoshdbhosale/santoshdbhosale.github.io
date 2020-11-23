@@ -1,0 +1,11 @@
+---
+layout: default
+title: Santosh CV
+---
+I am a postdoctoral researcher in Prof. Martin R. Larsen's lab at the University of Southern Denmark, where I’m setting up a semi-automated pipeline for the identification of post-translationally modified biomarkers from the clinical samples. 
+
+I pursued my PhD from University of Turku under the joint advisorship of Prof. Riitta Lahesmaa and Dr. Robert Moulder. During the course of studies, I worked on identifying and validating the serum protein biomarkers for type 1 diabetes and carotid atherosclerosis. 
+
+Before enrollment into the graduate studies, I gained my first level of research experience with my master thesis in the area of proteomics and mass spectrometry at National Chemical Laboratory (NCL) under the joint supervision of Drs. Mahesh J. Kulkarni and B.Santhakumari, after which I continued as a teacher in college of pharmacy and then as a research assistant again at NCL. 
+
+For Further details of my qualifications and scientific background, refer to [CV](https://github.com/santoshdbhosale/CV-first-repo/blob/master/CV.pdf).
