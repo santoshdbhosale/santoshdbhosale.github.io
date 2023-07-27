@@ -6,7 +6,7 @@ website:
   description: "I am pharmacist by training and do mass spectrometry based proteomics"   # A brief slogan (optional)
   image: img/sdb.png
   
-  favicon: img/favicon.png
+  
   
   # start of the navigation bar at the top of the website
   navbar:
