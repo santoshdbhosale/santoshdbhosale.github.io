@@ -1,0 +1,7 @@
+---
+title: "Cardiovascular-related proteomic changes in ECFCs exposed to the serum of COVID-19 patients"
+date: 2023-07-26
+categories:
+  - publications
+  - COVID
+---
