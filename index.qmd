@@ -2,7 +2,7 @@
 about:
   template: jolla
   id: about-block
-  image: "img/santosh.jpg"
+  image: "img/SDB1.jpg"
 ---
 
 ::: {#about-block}
