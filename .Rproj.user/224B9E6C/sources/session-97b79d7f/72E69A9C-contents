@@ -1,3 +1,0 @@
-install.packages('rmarkdown')
-install.packages('downlit')
-install.packages('xml2')

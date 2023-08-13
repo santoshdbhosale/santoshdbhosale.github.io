@@ -1,5 +1,5 @@
 [2,"\n"]
-[1,"Rendering:\n"]
+[1,"Terminating existing preview server....DONE\n\nRendering:\n"]
 [1,"\r[1/9] 404.qmd\n"]
 [1,"\r[2/9] about\\index.qmd\n"]
 [1,"\r[3/9] blog\\AP-MS-to-Study-FOSL-Related-Proteins-Interactome\\index.qmd\n"]
@@ -16,6 +16,3 @@
 [1,"  /img/logo.png (404: Not Found)\n"]
 [1,"GET: /cv/\n"]
 [1,"  /img/logo.png (404: Not Found)\n"]
-[1,"GET: /about/\n"]
-[1,"  /img/logo.png (404: Not Found)\n"]
-[1,"GET: /\n  /img/logo.png (404: Not Found)\n"]
