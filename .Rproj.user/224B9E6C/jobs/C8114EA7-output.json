@@ -14,3 +14,8 @@
 [1,"Watching files for changes\nBrowse at http://localhost:22222/\n"]
 [1,"GET: /\n"]
 [1,"  /img/logo.png (404: Not Found)\n"]
+[1,"GET: /\n"]
+[1,"  /img/logo.png (404: Not Found)\n"]
+[1,"GET: /\n  /img/logo.png (404: Not Found)\n"]
+[1,"GET: /cv/\n"]
+[1,"  /img/logo.png (404: Not Found)\n"]
