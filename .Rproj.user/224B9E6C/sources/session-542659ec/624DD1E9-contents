@@ -1,0 +1,26 @@
+---
+author: ""
+title-block-banner: false
+page-layout: full
+description-meta: "Welcome to my blog, Here, you will find a collection of posts for some of the previously published articles"
+listing:
+    contents: 
+      - "Serum-Proteomics-Pre-diabetic/index.qmd"
+      - "Serum-Proteomics-Atherosclerosis/index.qmd"
+      - "Mass-Spectrometry-Based-Serum-Proteomics/index.qmd"
+      - "AP-MS-to-Study-FOSL-Related-Proteins-Interactome/index.qmd"
+      - "Proteomics-data-analysis-&-visualization/index.qmd"
+    sort: "date desc"
+    categories: true
+toc-title: Year
+toc-location: right
+date-format: "MMMM D, YYYY"
+image: ""
+code-tools: false
+comments: false
+---
+
+Welcome to my blog, here, you will find a collection of posts for some of the previously published articles!
+
+
+

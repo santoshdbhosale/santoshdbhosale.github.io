@@ -1,0 +1,38 @@
+# download package from bioconductor
+if (!requireNamespace('BiocManager', quietly = TRUE))
+  install.packages('BiocManager')
+
+BiocManager::install('EnhancedVolcano')
+
+# load the package
+library(EnhancedVolcano)
+
+df = read.delim(file = 'volcano.tsv')
+View(df)
+
+vc = EnhancedVolcano(df,
+                lab = rownames(df),
+                x = 'Log2FC',
+                y = 'pvalues',
+                selectLab = c('GEMIN7','STX10','WASHC3',
+                              'PTCD3','CHCHD5','PHF14',
+                              'DENND6A','TRMT5','CETN2','COG8',
+                              'GTF2H3','SURF4'),
+                xlab = bquote(~Log[0.1]~ 'fold change'),
+                pCutoff = 10e-1,
+                FCcutoff = 0.2,
+                pointSize = 4.0,
+                labSize = 6.0,
+                labCol = 'black',
+                labFace = 'bold',
+                boxedLabels = TRUE,
+                colAlpha = 4/5,
+                legendPosition = 'right',
+                legendLabSize = 14,
+                legendIconSize = 4.0,
+                drawConnectors = TRUE,
+                widthConnectors = 1.0,
+                colConnectors = 'black',xlim=c(-2, 2))
+
+vc 
+

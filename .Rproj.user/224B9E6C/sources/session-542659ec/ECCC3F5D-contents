@@ -1,0 +1,5 @@
+airway_deg = read.csv('airway_deg_results.csv')
+EnhancedVolcano(airway_deg,lab=rownames(airway_deg),x="log2FoldChange",y="padj",
+                pCutoff=1e-15, FCcutoff=2,
+                selectLab=c("VCAM1", "WNT2", "KLF15", "ZBTB16"))
+

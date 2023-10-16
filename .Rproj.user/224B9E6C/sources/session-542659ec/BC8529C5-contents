@@ -1,0 +1,10 @@
+library(EnhancedVolcano)
+
+install.packages('airway')
+library(airway)
+
+library(magrittr)
+
+data("airway")
+
+airway$dex %<>% relevel("untrt")
