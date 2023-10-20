@@ -7,7 +7,7 @@ BiocManager::install('EnhancedVolcano')
 # load the package
 library(EnhancedVolcano)
 
-df = read.delim(file = 'volcano.tsv')
+df = read.delim(file = 'volcano.tsv', header=TRUE, row.names = 1)
 View(df)
 EnhancedVolcano(df,
                 lab = rownames(df),
@@ -27,7 +27,7 @@ EnhancedVolcano(df,
                 boxedLabels = TRUE,
                 colAlpha = 1,
                 legendPosition = 'right',
-                legendLabSize = 10,
+                legendLabSize = 8,
                 legendIconSize = 4.0,
                 drawConnectors = TRUE,
                 widthConnectors = 1.0,

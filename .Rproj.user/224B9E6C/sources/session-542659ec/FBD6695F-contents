@@ -1,0 +1,15 @@
+peptide_data1 = read.delim(file = 'PREDI_abundance_single-site_MD_for_BC.tsv', header=TRUE, row.names = 1)
+keep_old_data <- peptide_data1
+View(peptide_data1)
+# Convert NA value to zero
+peptide_data1[is.na(peptide_data1)] <- 0
+View(peptide_data1)
+pheno <- read.delim(file = 'pheno1.tsv')
+View(pheno)
+y2 <- limma::removeBatchEffect(peptide_data1, pheno$batch)
+View(y2)
+y2[is.na(keep_old_data)] <- NA
+results_limmaBC<-y2
+View(results_limmaBC)
+write.csv(results_limmaBC, 'limmaBC_MD_MP_single-site_Batch12.csv')
+
