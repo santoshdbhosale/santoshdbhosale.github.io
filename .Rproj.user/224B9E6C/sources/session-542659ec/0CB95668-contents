@@ -14,7 +14,7 @@ Typical shotgun proteomics experiment on representative number of samples result
 -   Statistical analysis
 -   Functional annotation analysis
 
-In this blog post, I will highlight the tools available to process the mass spectrometry data by outlining the above headings.
+In this blog post, I will highlight the tools used to process the mass spectrometry data in the
 
 1.  **Quality control checks:** Depending on the mode of LC-MS/MS data acquisition (i.e. either DDA or DIA), there exist plethora of tools to measure QC metrics. However, for the DIA analysis, limited pipelines are available.
 

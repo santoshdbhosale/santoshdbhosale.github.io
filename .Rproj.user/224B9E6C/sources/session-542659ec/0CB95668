@@ -19,15 +19,16 @@
         "scrollLine": "16",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "1840:0",
-        "docOutlineSize": "122"
+        "rmdVisualModeLocation": "1334:518",
+        "docOutlineSize": "122",
+        "ignored_words": "spectrometry\n"
     },
     "folds": "",
-    "lastKnownWriteTime": 1697490117,
+    "lastKnownWriteTime": 1697875825,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1697490117624,
+    "last_content_update": 1697875825847,
     "read_only": false,
     "read_only_alternatives": []
 }
