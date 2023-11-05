@@ -1,8 +1,0 @@
-if (!require("BiocManager", quietly = TRUE))
-  install.packages("BiocManager")
-
-BiocManager::install("airway")
-library(airway)
-data('airway')
-head(airway)
-str(airway)

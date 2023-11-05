@@ -1,0 +1,33 @@
+install.packages("pheatmap")# install pheatmap package
+# load the library
+library(pheatmap)
+# read the dataframe
+df = read.csv("Heatmap.csv", row.names="IDs")
+# log2 transformation
+df = log2(df)
+# omit Na
+df_mat = na.omit(df_mat)
+# rows scaling
+df = pheatmap(df, scale = "row", main = "row scaling")
+head(df_mat, 5)
+# convert to matrix
+df_mat = data.matrix(df)
+# view first 5 genes of data
+head(df_mat, 5)
+# create a data frame for column annotation
+sample_group <- data.frame(sample = rep(c("COVID_Crit", "COVID_Neg", "COVID_PCR+
+"), c(8, 8, 8)))
+row.names(sample_group) <- colnames(df_mat)
+head(group)
+pheatmap(df_mat, annotation_col = sample_group, cluster_rows = TRUE, cluster_cols = TRUE,
+         main = "ENRC_other")
+color <- colorRampPalette((c("blue", "white", "red")))(50)
+pheatmap(df_mat, color = color, annotation_col = Group, cluster_rows = FALSE, cluster_cols = FALSE,
+         main = "ENRC_other")
+# reducing the cell width
+pheatmap(df_mat, color = color, angle_col = 45, annotation_row = marker_type, cluster_rows = FALSE, cluster_cols = FALSE,
+         main = "ENRC_other", cellwidth=25)
+# and if you want rotate the column names (in case if they are too long)
+pheatmap(df_mat, color = color, angle_col = 45, annotation_row = marker_type, cluster_rows = FALSE, cluster_cols = FALSE,
+         main = "ENRC_other", cellwidth=25)
+
