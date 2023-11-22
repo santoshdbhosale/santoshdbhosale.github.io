@@ -8,7 +8,7 @@
     "dirty": false,
     "created": 1696972511122.0,
     "source_on_save": false,
-    "relative_order": 2,
+    "relative_order": 1,
     "properties": {
         "rmdVisualMode": "true",
         "rmdVisualWrapConfigured": "true",
@@ -20,7 +20,7 @@
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
         "rmdVisualModeLocation": "2:0",
-        "docOutlineSize": "122",
+        "docOutlineSize": "325",
         "ignored_words": "spectrometry\n"
     },
     "folds": "",
