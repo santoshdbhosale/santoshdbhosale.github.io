@@ -15,4 +15,6 @@ I pursued my PhD from University of Turku under the joint advisorship of Prof. R
 
 Before enrollment into the PhD study, I gained my first level of research experience with my master thesis in the area of proteomics and mass spectrometry at National Chemical Laboratory (NCL) under the joint supervision of Drs. Mahesh J. Kulkarni and B.Santhakumari, after which I continued as a teacher in college of pharmacy and then as a research assistant again at NCL.
 
-![Google scholar word cloud](/img/google-scholar.png)
+[Scholar Googler](https://shiny.rcg.sfu.ca/u/rdmorin/scholar_googler3/) was used to create the following wordcloud from Google Scholar ID.
+
+![](/img/wordcloud.png)
