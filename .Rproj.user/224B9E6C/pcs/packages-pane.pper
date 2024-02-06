@@ -1,6 +1,6 @@
 {
     "installOptions": {
-        "installFromRepository": true,
+        "installFromRepository": false,
         "libraryPath": "C:/Users/BhosaleS/AppData/Local/Programs/R/R-4.3.1/library",
         "installDependencies": true
     }

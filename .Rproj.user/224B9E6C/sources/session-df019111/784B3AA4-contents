@@ -1,0 +1,19 @@
+---
+about:
+  template: jolla
+  id: about-block
+  image: "img/SDB1.jpg"
+---
+
+::: {#about-block}
+:::
+
+# Understanding the Complexity of Proteome!
+
+Hi, I'm Santosh D. Bhosale, pharmacist by training and currently working as an associate biomedical scientist at [**Cedars-Sinai Precision biomarker laboratories**](https://www.cs-pbl.com/), Los Angeles, CA, USA.
+
+Using the versatility of mass spectrometry-based proteomics, I am exploring the properties of biologically important proteins.
+
+Precisely, I work on mass spectrometry-based proteomics technologies to address the questions related to biomedical research. These includes not only the qualitative and quantitative measurement of proteins, but also their post-translational modifications and interactions with other proteins. I use computational methods to understand the complexity of proteins.
+
+![](img/Proteomics.png)
