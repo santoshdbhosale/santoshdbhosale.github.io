@@ -3,7 +3,7 @@
     "path": "~/GitHub/santoshdbhosale.github.io/about/index.qmd",
     "project_path": "about/index.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "2202494104",
     "contents": "",
     "dirty": false,
     "created": 1707250491537.0,
@@ -21,11 +21,11 @@
         "rmdVisualModeLocation": "1068:476.6666564941406"
     },
     "folds": "",
-    "lastKnownWriteTime": 1707250870,
+    "lastKnownWriteTime": 1707250914,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1707250870674,
+    "last_content_update": 1707250914701,
     "read_only": false,
     "read_only_alternatives": []
 }

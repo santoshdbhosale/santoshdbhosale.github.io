@@ -7,3 +7,6 @@
 [1,"  /img/logo.png (404: Not Found)\n  /about/img/google_scholar.png (404: Not Found)\n"]
 [1,"GET: /about/index.html\n"]
 [1,"  /img/logo.png (404: Not Found)\n  /about/img/google_scholar.png (404: Not Found)\n"]
+[1,"pandoc \n  to: html\n  output-file: index.html\n  standalone: true\n  title-prefix: Santosh D. Bhosale\n  section-divs: true\n  html-math-method: mathjax\n  wrap: none\n  default-image-extension: png\n  toc: false\n  reference-location: margin\n  \nmetadata\n  document-css: false\n  link-citations: true\n  date-format: long\n  lang: en\n  fontsize: 1.1em\n  theme:\n    - pulse\n    - ../html/styles.scss\n  anchor-sections: true\n  fig-cap-location: margin\n  footnotes-hover: true\n  about:\n    template: jolla\n    id: about-block\n  \n"]
+[1,"Output created: ..\\docs\\about\\index.html\n\nWatching files for changes\n"]
+[1,"GET: /about/index.html\n  /img/logo.png (404: Not Found)\n"]
