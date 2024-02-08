@@ -24,5 +24,3 @@ Welcome to my blog, here, you will find a collection of posts for some of the pr
 The snapshot of my research work is visualized in the following WordCloud using [Scholar Googler](https://shiny.rcg.sfu.ca/u/rdmorin/scholar_googler3/) shiny app. This app extracts information from research publications by using individual's Google Scholar ID.
 
 ![](/img/wordcloud.png){width="500"}
-***
-
