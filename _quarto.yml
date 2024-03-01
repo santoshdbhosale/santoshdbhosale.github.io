@@ -28,8 +28,7 @@ website:
         href: https://www.linkedin.com/in/santoshdbhosale/
       - icon: github
         href: https://github.com/santoshdbhosale
-      - icon: files
-        text: Google-scholar
+      - text: "{{< iconify academicons google-scholar size=1.5em >}}"
         href: https://scholar.google.com/citations?user=sIxWbx0AAAAJ&hl=en
       - icon: envelope
         aria-label: email
