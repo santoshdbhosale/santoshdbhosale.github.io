@@ -1,8 +1,0 @@
----
-title: "Untitled"
-editor: visual
----
-
-quarto install extension quarto-ext/fontawesome
-
-quarto install extension schochastics/academicons

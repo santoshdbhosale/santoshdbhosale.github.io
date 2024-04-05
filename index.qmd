@@ -14,7 +14,7 @@ Hi, I'm Santosh D. Bhosale, pharmacist by training and currently working as an a
 
 Using the versatility of mass spectrometry-based proteomics, I am exploring the properties of biologically important proteins.
 
-Precisely, I work on mass spectrometry-based proteomics technologies to address the questions related to biomedical research. These includes not only the qualitative and quantitative measurement of proteins, but also their post-translational modifications and interactions with other proteins. I use computational methods to understand the complexity of proteins.
+Precisely, I work on mass spectrometry-based proteomics technologies to address the questions related to biomedical research. These includes not only the qualitative and quantitative measurement of proteins, but also their post-translational modifications and interactions with other proteins. I use variety of computational methods to understand the complexity of proteins.
 
 ![](img/Proteomics.png){}
 
