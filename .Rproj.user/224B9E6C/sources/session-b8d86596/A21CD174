@@ -3,7 +3,7 @@
     "path": "~/GitHub/santoshdbhosale.github.io/blog/Serum-Proteomics-Pre-diabetic/index.qmd",
     "project_path": "blog/Serum-Proteomics-Pre-diabetic/index.qmd",
     "type": "quarto_markdown",
-    "hash": "1497668379",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1714540255280.0,
@@ -18,14 +18,14 @@
         "rmdVisualWrapConfigured": "true",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "2526:1606.6666259765625"
+        "rmdVisualModeLocation": "2499:1039.3333740234375"
     },
     "folds": "",
-    "lastKnownWriteTime": 1714540730,
+    "lastKnownWriteTime": 1714588690,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1714540730177,
+    "last_content_update": 1714588690856,
     "read_only": false,
     "read_only_alternatives": []
 }

@@ -13,4 +13,4 @@ We utilized such unique samples from the DIPP cohort to identify early serum pro
 
 Previous serum proteomics biomarker studies of T1D have typically compared disease end points with control groups, i.e. the differences between patients with T1D and healthy controls. In contrast to the published reports, to our knowledge we have shown for the [**first time serum proteomics profile of pre-diabetic children**](https://diabetes.diabetesjournals.org/content/64/6/2265), mapping the changes from early infancy, seroconversion and diagnosis. The main finding included lower and higher levels of APOC4 and AFAM in cases compared to controls respectively and, the combination of this two proteins classified T1D developing children from controls with 91% success rate with an area under the curve value of 0.85. Notably the levels of APOC4 were found to be lower even before seroconversion.
 
-![Top scoring pair analysis](fig/tsp.png)
+![](fig/tsp.png)
