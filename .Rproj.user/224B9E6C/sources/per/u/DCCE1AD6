@@ -1,25 +1,27 @@
 {
-    "id": "CE2DE855",
+    "id": "DCCE1AD6",
     "path": null,
     "project_path": null,
     "type": "r_source",
-    "hash": "0",
+    "hash": "2171677443",
     "contents": "",
-    "dirty": false,
-    "created": 1714422414522.0,
+    "dirty": true,
+    "created": 1715118309734.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
         "tempName": "Untitled1",
         "source_window_id": "",
-        "Source": "Source"
+        "Source": "Source",
+        "cursorPosition": "3,0",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 7454057966332046965,
+    "lastKnownWriteTime": 8532478939215586676,
     "encoding": "",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1714422414522,
+    "last_content_update": 1715118809496,
     "read_only": false,
     "read_only_alternatives": []
 }

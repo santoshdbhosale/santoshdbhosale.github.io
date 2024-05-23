@@ -3,7 +3,7 @@
     "path": "~/GitHub/santoshdbhosale.github.io/blog/Serum-Proteomics-of-mother-infant-dyads-T1D-risk/index.qmd",
     "project_path": "blog/Serum-Proteomics-of-mother-infant-dyads-T1D-risk/index.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "3587759168",
     "contents": "",
     "dirty": false,
     "created": 1714345743323.0,
@@ -12,8 +12,8 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "6,22",
-        "scrollLine": "0",
+        "cursorPosition": "13,529",
+        "scrollLine": "11",
         "docOutlineVisible": "1",
         "rmdVisualMode": "false",
         "rmdVisualWrapConfigured": "true",
@@ -21,11 +21,11 @@
         "rmdVisualModeLocation": "146:323.3333435058594"
     },
     "folds": "",
-    "lastKnownWriteTime": 1714353834,
+    "lastKnownWriteTime": 1716418074,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1714353834257,
+    "last_content_update": 1716418074841,
     "read_only": false,
     "read_only_alternatives": []
 }
