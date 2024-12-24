@@ -10,11 +10,11 @@ about:
 
 # Understanding the Complexity of Proteome!
 
-Hi, I'm Santosh D. Bhosale, pharmacist by training and using the versatility of mass spectrometry-based proteomics, I am exploring the properties of biologically important proteins.
+Hi, I'm Santosh D. Bhosale, pharmacist by training and using the versatility of mass spectrometry-based proteomics, I am explored the properties of biologically important proteins.
 
-Precisely, I work on mass spectrometry-based proteomics technologies to address the questions related to biomedical research. These includes not only the qualitative and quantitative measurement of proteins, but also their post-translational modifications and interactions with other proteins. I use variety of computational methods to understand the complexity of proteins.
+Precisely, I worked on mass spectrometry-based proteomics technologies to address the questions related to biomedical research. These includes not only the qualitative and quantitative measurement of proteins, but also their post-translational modifications and interactions with other proteins. I used variety of computational methods to understand the complexity of proteins.
 
 ![](img/Proteomics.png){}
-
+# Accelerating drug discovery with AI and ML tools!
 
 
