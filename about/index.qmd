@@ -7,7 +7,6 @@ about:
 ::: {#about-block}
 :::
 
-Currently, leading an effort to develop biomarker module for omics studies. The work involves 
 
 As an associate scientific manager at Innoplexus Consulting Pvt. Ltd., Pune, India, I worked on data curation part for the outputs generated via different modules built to accelerate the drug discovery and development process using AI and ML approaches. Specifically, I collaborated with product managers, data engineers and data scientist in an agile environment. Besides, data curation, I was also responsible for providing insights on enhancing the performance of LLM models by optimizing the prompts and evaluating its accuracy. 
 
