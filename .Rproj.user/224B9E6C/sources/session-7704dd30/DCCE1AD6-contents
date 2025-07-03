@@ -1,3 +1,0 @@
-install.packages('esquisse')
-library(esquisse)
-esquisser()
