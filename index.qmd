@@ -1,12 +1,14 @@
 ---
-title: "Understanding the Complexity of Proteome!"
+title: "Proteomics Meets Artificial Intelligence!"
 ---
 
 ![](img/SDB1.jpg){width=200px fig-align="center"}
 
-Hi, I'm Santosh D. Bhosale, pharmacist by training and using the versatility of mass spectrometry-based proteomics, I explored the properties of biologically important proteins.
+Hi, I'm Santosh D. Bhosale, a pharmacist by training who has evolved from hands-on mass spectrometry-based proteomics research to leading AI-driven drug discovery initiatives.
 
-Precisely, I worked on mass spectrometry-based proteomics technologies to address the questions related to biomedical research. These includes not only the qualitative and quantitative measurement of proteins, but also their post-translational modifications and interactions with other proteins. I used variety of computational methods to understand the complexity of proteins.
+My journey began with exploring the properties of biologically important proteins using mass spectrometry-based proteomics technologies. I worked on qualitative and quantitative protein measurements, post-translational modifications, and protein-protein interactions using various computational methods to understand proteome complexity.
+
+Now, I'm leveraging this scientific foundation to lead the development of biomarker modules for omics research, integrating AI/ML approaches to accelerate pharmaceutical innovation and drug discovery processes.
 
 ![](img/Proteomics.png)
 
@@ -182,16 +184,16 @@ Precisely, I worked on mass spectrometry-based proteomics technologies to addres
         <h1>Accelerating <span class="title-highlight">Drug Discovery</span><br>with AI & ML</h1>
         
         <p class="description">
-            Leading biomarker module development for omics research, leveraging AI/ML approaches to accelerate pharmaceutical innovation. Bridging computational biology and product development through collaborative data science and strategic LLM optimization.
+            Transforming proteomics expertise into AI-powered drug discovery solutions. Currently leading biomarker module development for omics research, integrating LLM technologies and data science to bridge computational biology with pharmaceutical innovation.
         </p>
 
         <div class="tech-tags">
-            <div class="tag">Biomarker discovery</div>
-            <div class="tag">Omics research</div>
-            <div class="tag">LLM optimization</div>
-            <div class="tag">Data curation</div>
-            <div class="tag">Product management</div>
-            <div class="tag">AI/ML pipeline</div>
+            <div class="tag">Biomarker Development</div>
+            <div class="tag">Omics Research</div>
+            <div class="tag">LLM Optimization</div>
+            <div class="tag">Data Curation</div>
+            <div class="tag">Product Management</div>
+            <div class="tag">AI/ML Pipeline</div>
         </div>
     </div>
 </div>
