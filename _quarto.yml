@@ -6,8 +6,6 @@ website:
   description: "I am pharmacist by training and do mass spectrometry based proteomics"   # A brief slogan (optional)
   image: img/sdb.png
   
-  
-  
   # start of the navigation bar at the top of the website
   navbar:
     pinned: true
@@ -17,8 +15,15 @@ website:
     left:
       - text: "About"
         href: about/index.qmd
-      - text: "CV"
-        href: cv/index.qmd
+      - text: "Academic"
+        menu:
+          - text: "CV (Web)"
+            href: cv/index.qmd
+          - text: "Resume (PDF)"
+            href: cv/Resume.pdf
+          - text: "---"
+          - text: "PhD Thesis"
+            href: cv/Thesis.pdf
       - text: "Blog"
         href: blog/index.qmd
     
@@ -34,8 +39,6 @@ website:
         aria-label: email
         href: "mailto:santoshdbhosale@gmail.com"  
   
-  
-
 # Don't touch unless you know what you are doing :) ------------
   search: 
     location: navbar
@@ -44,6 +47,8 @@ website:
 project:
   type: website
   output-dir: docs
+  resources:
+    - "cv/*.pdf"
 
   preview: 
     port: 22222
