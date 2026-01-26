@@ -1,0 +1,327 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    color: #00d4ff;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #2c5364;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #00d4ff, #7b2ff7);
+    border-radius: 2px;
+}
+
+.about-section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.about-section:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-left-color: #00d4ff;
+}
+
+/* Career Timeline */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+    margin: 3rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #00d4ff, #7b2ff7);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-content {
+    width: 45%;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    position: relative;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.timeline-content:hover {
+    transform: scale(1.08);
+    background: #f8f9fa;
+    border-color: rgba(0, 212, 255, 0.8);
+    box-shadow: 0 15px 40px rgba(0,212,255,0.3);
+    z-index: 100;
+}
+
+.timeline-details {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease;
+    margin-top: 0;
+}
+
+.timeline-content:hover .timeline-details {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 1rem;
+}
+
+.timeline-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-details li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.timeline-details li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: #00d4ff;
+    font-weight: bold;
+}
+
+.timeline-achievements {
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.timeline-achievements strong {
+    color: #00d4ff;
+    font-size: 0.95rem;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-right: auto;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: auto;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: #00d4ff;
+    border: 4px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(0,212,255,0.2);
+    z-index: 10;
+}
+
+.timeline-year {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #00d4ff;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c5364;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-company {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0.8rem;
+}
+
+.timeline-description {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.skill-item {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    background: rgba(0, 212, 255, 0.2);
+    border-color: #00d4ff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
+}
+
+/* Current Role Expandable */
+.role-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    margin: 1rem 0;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.role-card:hover {
+    transform: scale(1.03);
+    background: #f8f9fa;
+    border-color: rgba(0, 212, 255, 0.8);
+    box-shadow: 0 15px 40px rgba(0,212,255,0.3);
+}
+
+.role-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.role-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #00d4ff;
+}
+
+.expand-icon {
+    font-size: 1.5rem;
+    color: #00d4ff;
+    transition: transform 0.3s ease;
+}
+
+.role-card:hover .expand-icon {
+    transform: rotate(90deg);
+}
+
+.role-responsibilities {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease;
+    margin-top: 0;
+}
+
+.role-card:hover .role-responsibilities {
+    max-height: 600px;
+    opacity: 1;
+    margin-top: 1.5rem;
+}
+
+.role-responsibilities ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.role-responsibilities li {
+    padding: 0.7rem 0 0.7rem 1.5rem;
+    position: relative;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.role-responsibilities li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: #00d4ff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.role-brief {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    line-height: 1.6;
+}
+
+.custom-hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #00d4ff, transparent);
+    margin: 3rem 0;
+}
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        flex-direction: column !important;
+        align-items: flex-start;
+    }
+
+    .timeline-content {
+        width: calc(100% - 60px);
+        margin-left: 60px !important;
+        margin-right: 0 !important;
+    }
+
+    .timeline-dot {
+        left: 20px;
+    }
+}
