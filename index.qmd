@@ -1,6 +1,4 @@
 ---
-title: "Santosh D. Bhosale"
-description: "Proteomics Meets Artificial Intelligence"
 page-layout: full
 ---
 
@@ -62,7 +60,7 @@ A **pharmacist-turned-proteomics scientist** with a PhD and 15+ years of experie
 
 ---
 
-## What I Do
+## What I Do - Proteomics Meets Artificial Intelligence
 
 ::: {.grid}
 
