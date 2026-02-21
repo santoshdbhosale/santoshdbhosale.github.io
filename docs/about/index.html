@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Santosh D. Bhosale -</title>
+<title>Santosh D. Bhosale - About</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,11 +65,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=DM+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
 
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -146,361 +148,423 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">About</h1>
+</div>
 
 
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 <style>
-    /* Logo styling */
-    .institution-logos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        margin: 2rem 0;
-        padding: 2rem;
-        background: rgba(255, 255, 255, 0.02);
-        border-radius: 10px;
-    }
+  :root {
+    --ink:        #1a1a2e;
+    --ink-muted:  #4a4a6a;
+    --ink-light:  #8888aa;
+    --surface:    #f8f7f4;
+    --surface-2:  #f0ede8;
+    --accent:     #2563eb;
+    --accent-warm:#e05c1a;
+    --border:     rgba(26,26,46,0.10);
+    --serif:      'DM Serif Display', Georgia, serif;
+    --sans:       'DM Sans', system-ui, sans-serif;
+  }
 
-    .logo-item {
-        filter: grayscale(100%) brightness(0.8);
-        opacity: 0.7;
-        transition: all 0.3s ease;
-        height: 60px;
-        object-fit: contain;
-    }
+  body { font-family: var(--sans); color: var(--ink); background: var(--surface); }
+  #quarto-content { padding: 0 !important; }
+  .page-columns { display: block !important; }
+  h1.title, .quarto-title { display: none !important; }
 
-    .logo-item:hover {
-        filter: grayscale(0%) brightness(1);
-        opacity: 1;
-        transform: scale(1.1);
-    }
+  .sdb-about {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 5rem;
+  }
 
-    /* Stable content sections - no blinking */
-    .content-section {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  /* ── Currently Badge ── */
+  .now-badge {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+    border: 1.5px solid #bfdbfe;
+    border-radius: 14px;
+    padding: 1.1rem 1.4rem;
+    margin-bottom: 4rem;
+    font-size: 0.93rem;
+    color: #1e40af;
+    line-height: 1.6;
+  }
+  .now-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #2563eb;
+    flex-shrink: 0;
+    margin-top: 0.35rem;
+    box-shadow: 0 0 0 3px rgba(37,99,235,0.22);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 0 0 3px rgba(37,99,235,0.22); }
+    50%      { box-shadow: 0 0 0 6px rgba(37,99,235,0.07); }
+  }
 
-    /* Section styling with subtle hover only */
-    .about-section {
-        margin-bottom: 2rem;
-        padding: 1.5rem;
-        background: rgba(255, 255, 255, 0.02);
-        border-radius: 10px;
-        border-left: 4px solid transparent;
-        transition: border-left-color 0.3s ease, background 0.3s ease;
-    }
+  /* ── Shared section labels ── */
+  .section-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    margin: 0 0 0.6rem;
+  }
+  .section-title {
+    font-family: var(--serif);
+    font-size: 1.85rem;
+    color: var(--ink);
+    margin: 0 0 1.4rem;
+    line-height: 1.2;
+  }
 
-    .about-section:hover {
-        background: rgba(255, 255, 255, 0.04);
-        border-left-color: #00d4ff;
-    }
+  /* ── Research Philosophy ── */
+  .philosophy { margin-bottom: 4rem; }
+  .philosophy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+  @media (max-width: 600px) { .philosophy-grid { grid-template-columns: 1fr; } }
+  .phil-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.5rem;
+  }
+  .phil-card-icon { font-size: 1.6rem; margin-bottom: 0.6rem; }
+  .phil-card-title {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    color: var(--ink);
+    margin: 0 0 0.5rem;
+  }
+  .phil-card-text {
+    font-size: 0.9rem;
+    color: var(--ink-muted);
+    line-height: 1.7;
+    margin: 0;
+  }
 
-    /* Skill items with hover effect */
-    .skill-item {
-        display: inline-block;
-        margin: 0.5rem;
-        padding: 0.5rem 1rem;
-        background: rgba(0, 212, 255, 0.1);
-        border: 1px solid rgba(0, 212, 255, 0.3);
-        border-radius: 20px;
-        transition: all 0.3s ease;
-        font-size: 0.9rem;
-    }
+  /* ── Career Journey ── */
+  .journey { margin-bottom: 4rem; }
+  .bench-to-bytes {
+    margin-bottom: 2.5rem;
+  }
+  .bench-to-bytes p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--ink-muted);
+    margin: 0 0 1rem;
+  }
+  .bench-to-bytes p:last-child { margin: 0; }
+  .timeline {
+    position: relative;
+    padding-left: 2.4rem;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.65rem;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent), var(--accent-warm));
+    border-radius: 2px;
+  }
+  .tl-item {
+    position: relative;
+    margin-bottom: 2.4rem;
+  }
+  .tl-item:last-child { margin-bottom: 0; }
+  .tl-dot {
+    position: absolute;
+    left: -2.4rem;
+    top: 0.32rem;
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: white;
+    border: 2.5px solid var(--accent);
+    box-shadow: 0 0 0 3px var(--surface);
+  }
+  .tl-item.active .tl-dot {
+    background: var(--accent);
+    box-shadow: 0 0 0 4px rgba(37,99,235,0.18);
+  }
+  .tl-period {
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+  }
+  .tl-role {
+    font-family: var(--serif);
+    font-size: 1.12rem;
+    color: var(--ink);
+    margin: 0 0 0.2rem;
+  }
+  .tl-place {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--ink-light);
+    margin-bottom: 0.4rem;
+  }
+  .tl-desc {
+    font-size: 0.9rem;
+    color: var(--ink-muted);
+    line-height: 1.65;
+    margin: 0;
+  }
 
-    .skill-item:hover {
-        background: rgba(0, 212, 255, 0.2);
-        border-color: #00d4ff;
-        transform: translateY(-3px);
-        box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
-    }
+  /* ── Deep Expertise ── */
+  .expertise { margin-bottom: 4rem; }
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+  @media (max-width: 560px) { .expertise-grid { grid-template-columns: 1fr; } }
+  .exp-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.3rem 1.5rem;
+    transition: box-shadow 0.18s;
+  }
+  .exp-card:hover { box-shadow: 0 4px 20px rgba(26,26,46,0.07); }
+  .exp-card-title {
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.9rem;
+  }
+  .exp-list {
+    list-style: none;
+    margin: 0; padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+  .exp-list li {
+    font-size: 0.88rem;
+    color: var(--ink-muted);
+    padding-left: 1rem;
+    position: relative;
+    line-height: 1.5;
+  }
+  .exp-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-warm);
+    font-size: 0.78rem;
+  }
 
-    /* Horizontal rule styling */
-    .custom-hr {
-        border: none;
-        height: 2px;
-        background: linear-gradient(to right, transparent, #00d4ff, transparent);
-        margin: 3rem 0;
-    }
-
-    /* Heading accents */
-    h2 {
-        position: relative;
-        padding-bottom: 0.5rem;
-        margin-top: 2rem;
-    }
-
-    h2::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 60px;
-        height: 3px;
-        background: linear-gradient(to right, #00d4ff, #7b2ff7);
-        border-radius: 2px;
-    }
-
-    h3 {
-        color: #00d4ff;
-        margin-top: 1.5rem;
-    }
-
-    /* About title */
-    .about-title {
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-bottom: 2rem;
-        color: #00d4ff;
-    }
-
-    /* Career Timeline */
-    .timeline {
-        position: relative;
-        padding: 2rem 0;
-        margin: 3rem 0;
-    }
-
-    .timeline::before {
-        content: '';
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 4px;
-        height: 100%;
-        background: linear-gradient(to bottom, #00d4ff, #7b2ff7);
-    }
-
-    .timeline-item {
-        position: relative;
-        margin-bottom: 3rem;
-        display: flex;
-        align-items: center;
-    }
-
-    .timeline-item:nth-child(odd) {
-        flex-direction: row;
-    }
-
-    .timeline-item:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-
-    .timeline-content {
-        width: 45%;
-        padding: 1.5rem;
-        background: rgba(255, 255, 255, 0.05);
-        border-radius: 10px;
-        border: 1px solid rgba(0, 212, 255, 0.2);
-        position: relative;
-        transition: all 0.3s ease;
-    }
-
-    .timeline-content:hover {
-        transform: scale(1.05);
-        background: rgba(255, 255, 255, 0.08);
-        border-color: rgba(0, 212, 255, 0.5);
-        box-shadow: 0 10px 25px rgba(0,212,255,0.2);
-    }
-
-    .timeline-item:nth-child(odd) .timeline-content {
-        margin-right: auto;
-    }
-
-    .timeline-item:nth-child(even) .timeline-content {
-        margin-left: auto;
-    }
-
-    .timeline-dot {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 20px;
-        height: 20px;
-        background: #00d4ff;
-        border: 4px solid white;
-        border-radius: 50%;
-        box-shadow: 0 0 0 4px rgba(0,212,255,0.2);
-        z-index: 10;
-    }
-
-    .timeline-year {
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: #00d4ff;
-        margin-bottom: 0.5rem;
-    }
-
-    .timeline-title {
-        font-size: 1.3rem;
-        font-weight: 600;
-        color: #00d4ff;
-        margin-bottom: 0.5rem;
-    }
-
-    .timeline-company {
-        font-size: 1rem;
-        color: #999;
-        font-style: italic;
-        margin-bottom: 0.8rem;
-    }
-
-    .timeline-description {
-        color: #ccc;
-        line-height: 1.6;
-        font-size: 0.95rem;
-    }
-
-    @media (max-width: 768px) {
-        .timeline::before {
-            left: 20px;
-        }
-
-        .timeline-item {
-            flex-direction: column !important;
-            align-items: flex-start;
-        }
-
-        .timeline-content {
-            width: calc(100% - 60px);
-            margin-left: 60px !important;
-            margin-right: 0 !important;
-        }
-
-        .timeline-dot {
-            left: 20px;
-        }
-    }
+  /* ── Resources ── */
+  .resources { margin-bottom: 1rem; }
+  .resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 1rem;
+  }
+  .res-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.3rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.18s;
+  }
+  .res-card:hover {
+    box-shadow: 0 4px 20px rgba(26,26,46,0.08);
+    transform: translateY(-2px);
+    border-color: rgba(37,99,235,0.25);
+  }
+  .res-icon { font-size: 1.4rem; }
+  .res-title {
+    font-family: var(--serif);
+    font-size: 1rem;
+    color: var(--ink);
+    margin-top: 0.2rem;
+  }
+  .res-sub {
+    font-size: 0.81rem;
+    color: var(--ink-light);
+    line-height: 1.5;
+    flex-grow: 1;
+  }
+  .res-cta {
+    font-size: 0.79rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-top: 0.4rem;
+  }
 </style>
 
+<div class="sdb-about">
 
-<section id="product-manager" class="level3 content-section about-section">
-<h3 class="anchored" data-anchor-id="product-manager">Product Manager</h3>
-<p><strong>Partex.AI (formerly Innoplexus Consulting Pvt. Ltd.), Pune, India</strong></p>
-<p>I’m currently leading the development of a <strong>biomarker module for omics research</strong>, working at the intersection of computational biology and AI-driven drug discovery. My role involves close collaboration with data engineers and data scientists to build innovative solutions that accelerate pharmaceutical and biomedical research.</p>
-<p><strong>Key responsibilities include:</strong></p>
-<ul>
-<li>Spearheading biomarker module development and integration across multiple research platforms</li>
-<li>Extracting and curating data from public databases using advanced LLM models (Llama and Gemini)</li>
-<li>Implementing scripting-based approaches to streamline data curation workflows</li>
-<li>Contributing to cross-functional module development by incorporating biomarkers as key features</li>
-<li>Optimizing LLM prompts and evaluating model accuracy to enhance AI/ML pipeline performance</li>
-</ul>
-</section>
-<div class="custom-hr"></div>
-<section id="professional-experience" class="level2 content-section about-section">
-<h2 class="anchored" data-anchor-id="professional-experience">Professional Experience</h2>
-<section id="associate-scientific-manager" class="level3">
-<h3 class="anchored" data-anchor-id="associate-scientific-manager">Associate Scientific Manager</h3>
-<p><strong>Partex.AI (formerly Innoplexus Consulting Pvt. Ltd.), Pune, India</strong></p>
-<p>Led data curation initiatives for AI/ML-powered drug discovery modules in an agile, cross-functional environment. Collaborated with product managers, data engineers and data scientists to accelerate the drug discovery and development process.</p>
-<p><strong>Key achievements:</strong></p>
-<ul>
-<li>Enhanced LLM model performance through strategic prompt optimization and accuracy evaluation</li>
-<li>Streamlined data curation processes for multiple AI/ML modules</li>
-<li>Bridged the gap between scientific expertise and technical implementation</li>
-</ul>
-</section>
-<section id="associate-biomedical-scientist" class="level3">
-<h3 class="anchored" data-anchor-id="associate-biomedical-scientist">Associate Biomedical Scientist</h3>
-<p><strong>Precision Biomarker Laboratories, Cedars-Sinai Medical Center, Los Angeles, CA, USA</strong></p>
-<p>Conducted research and development in clinical proteomics and biomarker discovery, driving improvements in laboratory workflows and computational analysis capabilities.</p>
-<p><strong>Key achievements:</strong></p>
-<ul>
-<li>Developed novel PTMomics platforms for post-translational modification analysis</li>
-<li>Supervised laboratory technicians and managed end-to-end project delivery</li>
-<li>Improved existing workflows through collaborative innovation</li>
-<li>Led study execution, report compilation, and stakeholder presentations</li>
-</ul>
-</section>
-<section id="postdoctoral-researcher" class="level3">
-<h3 class="anchored" data-anchor-id="postdoctoral-researcher">Postdoctoral Researcher</h3>
-<p><strong>University of Southern Denmark, Odense, Denmark</strong></p>
-<p>Worked with Prof.&nbsp;Martin R. Larsen to develop a comprehensive pipeline for identifying post-translationally modified biomarkers in clinical samples, advancing the field of clinical proteomics.</p>
-<ul>
-<li>Led an effort to develop a platform for the discovery of Cysteine, N-linked glycosylation and phosphorylation biomarkers to enhance diagnostic precision.</li>
-<li>Analyzed high-complexity PTMomics data to identify plasma-based candidate biomarkers for the clinical stratification of ovarian cancer patients.</li>
-<li>Directly supervised and collaborated with lab technicians and PhD candidates, ensuring technical accuracy and project continuity.</li>
-<li>Presented findings to internal leadership and collaborators, translating complex data into comprehensive technical reports and strategic updates.</li>
-</ul>
-</section>
-<section id="postdoctoral-researcher-1" class="level3">
-<h3 class="anchored" data-anchor-id="postdoctoral-researcher-1">Postdoctoral Researcher</h3>
-<p><strong>Turku Bioscience, Turku, Finland</strong></p>
-<p>Used capabilities of serum proteomics to uncover the molecular drivers of development, disease and immune regulation. My work bridged the gap between complex mass spectrometry data and actionable biological insights through the following core pillars:</p>
-<ul>
-<li>Led large-scale serum proteome profiling to evaluate the impact of infant nutritional supplementation and pioneered methods to correlate maternal and child proteomes for longitudinal study.</li>
-<li>Executed temporal serum proteome analysis for children developing Celiac Disease (CD), identifying molecular shifts and potential biomarkers preceding clinical diagnosis.</li>
-<li>Conducted sophisticated interactomics measurements and data analysis for key T-cell transcription factors, mapping the protein-protein interaction networks that govern immune cell identity.</li>
-<li>Bridged the skills gap by designing and delivering practical courses on proteomics data analysis, translating complex computational workflows into accessible training.</li>
-</ul>
-</section>
-</section>
-<div class="custom-hr"></div>
-<section id="education" class="level2 content-section about-section">
-<h2 class="anchored" data-anchor-id="education">Education</h2>
-<section id="doctor-of-philosophy-medical-microbiology-and-immunology" class="level3">
-<h3 class="anchored" data-anchor-id="doctor-of-philosophy-medical-microbiology-and-immunology">Doctor of Philosophy (Medical Microbiology and Immunology)</h3>
-<p><strong>University of Turku, Finland</strong></p>
-<p>Pursued PhD under the joint advisorship of Prof.&nbsp;Riitta Lahesmaa and Dr.&nbsp;Robert Moulder, focusing on proteomics applications in clinical and immunological research.</p>
-<p><strong>Research focus:</strong></p>
-<ul>
-<li>Identified and validated serum protein biomarkers for Type 1 diabetes</li>
-<li>Investigated protein biomarkers for carotid atherosclerosis</li>
-<li>Applied mass spectrometry-based proteomics to study cellular proteomics.</li>
-<li>Conducted proteomics data analysis courses</li>
-</ul>
-</section>
-<section id="masters-degree-thesis" class="level3">
-<h3 class="anchored" data-anchor-id="masters-degree-thesis">Master’s Degree Thesis</h3>
-<p><strong>National Chemical Laboratory (NCL), India</strong></p>
-<p>Completed master’s thesis in mass spectrometry based proteomics area under the joint supervision of Drs. Mahesh J. Kulkarni and B. Santhakumari.</p>
-</section>
-<section id="pharmacy-degree" class="level3">
-<h3 class="anchored" data-anchor-id="pharmacy-degree">Pharmacy Degree</h3>
-<p>Pharmacist by training, which provides a strong foundation in pharmaceutical sciences and drug development principles.</p>
-</section>
-</section>
-<div class="custom-hr"></div>
-<section id="expertise" class="level2 content-section about-section">
-<h2 class="anchored" data-anchor-id="expertise">Expertise</h2>
-<p><strong>Technical Skills:</strong></p>
-<div style="margin: 1.5rem 0;">
-<span class="skill-item">Mass Spectrometry Proteomics</span>
-<span class="skill-item">PTM Analysis</span>
-<span class="skill-item">Biomarker Discovery</span>
-<span class="skill-item">Large Language Models</span>
-<span class="skill-item">AI/ML Pipeline</span>
-<span class="skill-item">Data Curation</span>
-<span class="skill-item">Computational Biology</span>
-<span class="skill-item">Omics Analysis</span>
+  <!-- ── CAREER JOURNEY ── -->
+  <div class="journey">
+    <p class="section-label">Career Journey</p>
+    <h2 class="section-title anchored">From Bench to Bytes</h2>
+    <div class="bench-to-bytes">
+      <p>My scientific journey began in proteomics, when I gained my first level of research experience with my master thesis in the area of proteomics and mass spectrometry. This led me to pursue PhD-level research in mass spectrometry-based proteomics — working at the intersection of analytical chemistry and computational biology to decode protein function, biomarker discovery and validation and protein-protein interaction networks.</p>
+      <p>Over the years I accumulated expertise across the full proteomics pipeline: experimental design, LC-MS/MS data acquisition, database searching, quantitative analysis (label-free, TMT) and statistical interpretation. This foundation gave me an intuition for biological data that no amount of machine learning courses can replace.</p>
+      <p>Today, I channel that foundation into AI-driven drug discovery — leading the development of biomarker modules for omics research, building data pipelines and integrating large language models to transform raw biological data into actionable insights for indication priortization, drug-target identification and explainability in clinical trial predictions.</p>
+    </div>
+    <div class="timeline">
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-period">Foundation</div>
+        <div class="tl-role">B.Pharm &amp; M.Pharm</div>
+        <div class="tl-place">Pharmaceutical sciences</div>
+        <div class="tl-desc">Grounded in drug action, pharmacokinetics and biochemistry. Became fascinated early by how molecular structure determines biological behaviour — a curiosity that never left.</div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-period">PhD</div>
+        <div class="tl-role">Mass Spectrometry-Based Proteomics</div>
+        <div class="tl-place">Doctoral Research</div>
+        <div class="tl-desc">Deep focus on LC-MS/MS methodology, quantitative proteomics (label-free, iTRAQ), biomarker identification and validation and protein-protein interaction networks. Built expertise across the full experimental and computational pipeline — from sample prep to statistical interpretation.</div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-period">Postdoctoral &amp; Research</div>
+        <div class="tl-role">MS based-Proteomics</div>
+        <div class="tl-place">Academic and Industry Research</div>
+        <div class="tl-desc">Shifted focus toward post-translational modifications mapping, data integration and computational analysis. Computational proteomics pipelines for statistical proteomics, contributed to COVID-19 biomarker studies and began combining bioinformatics with machine learning approaches for biological data interpretation. Lead end‑to‑end delivery projects related to the proteomics (From SOW to deliverable). </div>
+      </div>
+
+      <div class="tl-item active">
+        <div class="tl-dot"></div>
+        <div class="tl-period">Now</div>
+        <div class="tl-role">AI/ML Drug Discovery Lead</div>
+        <div class="tl-place">Industry</div>
+        <div class="tl-desc">Leading biomarker module development for omics research. Architecting LLM-integrated data pipelines, directing data curation strategy, and managing cross-functional collaboration between bioinformaticians, data scientists, and pharmaceutical scientists.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── DEEP EXPERTISE ── -->
+  <div class="expertise">
+    <p class="section-label">Deep Expertise</p>
+    <h2 class="section-title anchored">What I Actually Know</h2>
+    <div class="expertise-grid">
+      <div class="exp-card">
+        <div class="exp-card-title">🔬 Mass Spectrometry &amp; Proteomics</div>
+        <ul class="exp-list">
+          <li>LC-MS/MS experimental design &amp; data acquisition</li>
+          <li>Database searching (MaxQuant, Mascot, Proteome Discoverer)</li>
+          <li>Label-free and TMT quantification</li>
+          <li>Post-translational modification (PTM) analysis</li>
+          <li>Protein complex &amp; interaction network mapping</li>
+          <li>Proteome complexity interpretation</li>
+        </ul>
+      </div>
+      <div class="exp-card">
+        <div class="exp-card-title">🤖 AI, ML &amp; LLMs</div>
+        <ul class="exp-list">
+          <li>LLM prompt engineering &amp; pipeline integration</li>
+          <li>ML model application for biological data</li>
+          <li>AI-assisted biomarker candidate scoring</li>
+          <li>Data curation </li>
+          <li>Python &amp; R for ML pipelines</li>
+          <li>Evaluation frameworks for model outputs in science</li>
+        </ul>
+      </div>
+      <div class="exp-card">
+        <div class="exp-card-title">📊 Bioinformatics &amp; Statistics</div>
+        <ul class="exp-list">
+          <li>Multi-omics data integration</li>
+          <li>Statistical modelling for high-dimensional biological data</li>
+          <li>Differential expression &amp; enrichment analysis</li>
+          <li>Data visualisation (ggplot2, ComplexHeatmap)</li>
+          <li>Reproducible pipeline development in R &amp; Python</li>
+        </ul>
+      </div>
+      <div class="exp-card">
+        <div class="exp-card-title">🚀 Product &amp; Leadership</div>
+        <ul class="exp-list">
+          <li>Biomarker module architecture &amp; product management</li>
+          <li>Cross-functional team leadership (science × engineering)</li>
+          <li>Scientific communication for non-technical stakeholders</li>
+          <li>Agile delivery in research-product environments</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── RESOURCES ── -->
+  <div class="resources">
+    <p class="section-label">Explore Further</p>
+    <h2 class="section-title anchored">Work &amp; Resources</h2>
+    <div class="resources-grid">
+      <a class="res-card" href="../cv/Thesis.pdf" target="_blank">
+        <div class="res-icon">📄</div>
+        <div class="res-title">PhD Thesis</div>
+        <div class="res-sub">The full scientific foundation — mass spectrometry-based proteomics research in depth.</div>
+        <div class="res-cta">Read PDF →</div>
+      </a>
+      <a class="res-card" href="../cv/index.html">
+        <div class="res-icon">🎓</div>
+        <div class="res-title">Academic CV</div>
+        <div class="res-sub">Publications, conference presentations, education, awards, and full research history.</div>
+        <div class="res-cta">View CV →</div>
+      </a>
+      <a class="res-card" href="https://github.com/santoshdbhosale" target="_blank">
+        <div class="res-icon">💻</div>
+        <div class="res-title">R Scripts &amp; Code</div>
+        <div class="res-sub">Open-source pipelines for proteomics analysis, statistical modelling, and omics workflows.</div>
+        <div class="res-cta">View on GitHub →</div>
+      </a>
+      <a class="res-card" href="../blog/index.html">
+        <div class="res-icon">✍️</div>
+        <div class="res-title">Blog</div>
+        <div class="res-sub">Long-form writing on proteomics.</div>
+        <div class="res-cta">Read Posts →</div>
+      </a>
+    </div>
+  </div>
+
 </div>
-<p><strong>Professional Skills:</strong></p>
-<div style="margin: 1.5rem 0;">
-<span class="skill-item">Product Management</span>
-<span class="skill-item">Cross-functional Collaboration</span>
-<span class="skill-item">Project Leadership</span>
-<span class="skill-item">Agile Methodology</span>
-<span class="skill-item">Scientific Communication</span>
-<span class="skill-item">Prompt Engineering</span>
-</div>
-</section>
-<div class="custom-hr"></div>
-<section id="career-journey" class="level2 content-section about-section">
-<h2 class="anchored" data-anchor-id="career-journey">Career Journey</h2>
-<p>My career represents a unique evolution from bench scientist to AI-driven drug discovery leader. Starting with hands-on proteomics research during my PhD and postdoc, I developed deep expertise in mass spectrometry, biomarker discovery, and computational analysis.</p>
-<p>At Cedars-Sinai Medical Center, I translated this research expertise into clinical applications, developing new platforms and improving laboratory workflows.</p>
-<p>Today, I leverage this scientific foundation to lead biomarker module development, integrating cutting-edge AI/ML technologies with proteomics knowledge to accelerate drug discovery. This journey has equipped me with a rare combination of deep scientific expertise and practical AI/ML implementation skills, positioning me at the forefront of computational biology and pharmaceutical innovation.</p>
-</section>
 
 
 
