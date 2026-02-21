@@ -1,33 +1,89 @@
 ---
-title: "Untitled"
-editor: visual
+title: ""
 ---
-<!DOCTYPE html>
-<html>
-<head>
+
+```{=html}
 <style>
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        color: #333;
-        max-width: 1200px;
-        margin: 0 auto;
+    /* Logo styling */
+    .institution-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin: 2rem 0;
         padding: 2rem;
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 10px;
     }
 
-    h1 {
-        color: #00d4ff;
-        font-size: 2.5rem;
+    .logo-item {
+        filter: grayscale(100%) brightness(0.8);
+        opacity: 0.7;
+        transition: all 0.3s ease;
+        height: 60px;
+        object-fit: contain;
+    }
+
+    .logo-item:hover {
+        filter: grayscale(0%) brightness(1);
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    /* Stable content sections - no blinking */
+    .content-section {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Section styling with subtle hover only */
+    .about-section {
         margin-bottom: 2rem;
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 10px;
+        border-left: 4px solid transparent;
+        transition: border-left-color 0.3s ease, background 0.3s ease;
     }
 
+    .about-section:hover {
+        background: rgba(255, 255, 255, 0.04);
+        border-left-color: #00d4ff;
+    }
+
+    /* Skill items with hover effect */
+    .skill-item {
+        display: inline-block;
+        margin: 0.5rem;
+        padding: 0.5rem 1rem;
+        background: rgba(0, 212, 255, 0.1);
+        border: 1px solid rgba(0, 212, 255, 0.3);
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        font-size: 0.9rem;
+    }
+
+    .skill-item:hover {
+        background: rgba(0, 212, 255, 0.2);
+        border-color: #00d4ff;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
+    }
+
+    /* Horizontal rule styling */
+    .custom-hr {
+        border: none;
+        height: 2px;
+        background: linear-gradient(to right, transparent, #00d4ff, transparent);
+        margin: 3rem 0;
+    }
+
+    /* Heading accents */
     h2 {
-        color: #2c5364;
-        font-size: 2rem;
-        margin-top: 3rem;
-        margin-bottom: 2rem;
         position: relative;
         padding-bottom: 0.5rem;
+        margin-top: 2rem;
     }
 
     h2::after {
@@ -41,18 +97,17 @@ editor: visual
         border-radius: 2px;
     }
 
-    .about-section {
-        margin-bottom: 3rem;
-        padding: 2rem;
-        background: rgba(255, 255, 255, 0.02);
-        border-radius: 10px;
-        border-left: 4px solid transparent;
-        transition: all 0.3s ease;
+    h3 {
+        color: #00d4ff;
+        margin-top: 1.5rem;
     }
 
-    .about-section:hover {
-        background: rgba(255, 255, 255, 0.04);
-        border-left-color: #00d4ff;
+    /* About title */
+    .about-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        color: #00d4ff;
     }
 
     /* Career Timeline */
@@ -90,68 +145,18 @@ editor: visual
     .timeline-content {
         width: 45%;
         padding: 1.5rem;
-        background: white;
+        background: rgba(255, 255, 255, 0.05);
         border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         border: 1px solid rgba(0, 212, 255, 0.2);
         position: relative;
-        transition: all 0.4s ease;
-        overflow: hidden;
+        transition: all 0.3s ease;
     }
 
     .timeline-content:hover {
-        transform: scale(1.08);
-        background: #f8f9fa;
-        border-color: rgba(0, 212, 255, 0.8);
-        box-shadow: 0 15px 40px rgba(0,212,255,0.3);
-        z-index: 100;
-    }
-
-    .timeline-details {
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease;
-        margin-top: 0;
-    }
-
-    .timeline-content:hover .timeline-details {
-        max-height: 500px;
-        opacity: 1;
-        margin-top: 1rem;
-    }
-
-    .timeline-details ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .timeline-details li {
-        padding: 0.5rem 0 0.5rem 1.5rem;
-        position: relative;
-        color: #555;
-        font-size: 0.9rem;
-        line-height: 1.5;
-    }
-
-    .timeline-details li::before {
-        content: '▹';
-        position: absolute;
-        left: 0;
-        color: #00d4ff;
-        font-weight: bold;
-    }
-
-    .timeline-achievements {
-        margin-top: 0.8rem;
-        padding-top: 0.8rem;
-        border-top: 1px solid rgba(0, 212, 255, 0.2);
-    }
-
-    .timeline-achievements strong {
-        color: #00d4ff;
-        font-size: 0.95rem;
+        transform: scale(1.05);
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(0, 212, 255, 0.5);
+        box-shadow: 0 10px 25px rgba(0,212,255,0.2);
     }
 
     .timeline-item:nth-child(odd) .timeline-content {
@@ -185,132 +190,21 @@ editor: visual
     .timeline-title {
         font-size: 1.3rem;
         font-weight: 600;
-        color: #2c5364;
+        color: #00d4ff;
         margin-bottom: 0.5rem;
     }
 
     .timeline-company {
         font-size: 1rem;
-        color: #666;
+        color: #999;
         font-style: italic;
         margin-bottom: 0.8rem;
     }
 
     .timeline-description {
-        color: #555;
+        color: #ccc;
         line-height: 1.6;
         font-size: 0.95rem;
-    }
-
-    .skill-item {
-        display: inline-block;
-        margin: 0.5rem;
-        padding: 0.5rem 1rem;
-        background: rgba(0, 212, 255, 0.1);
-        border: 1px solid rgba(0, 212, 255, 0.3);
-        border-radius: 20px;
-        font-size: 0.9rem;
-        transition: all 0.3s ease;
-    }
-
-    .skill-item:hover {
-        background: rgba(0, 212, 255, 0.2);
-        border-color: #00d4ff;
-        transform: translateY(-3px);
-        box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
-    }
-
-    /* Current Role Expandable */
-    .role-card {
-        background: white;
-        padding: 2rem;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        border: 1px solid rgba(0, 212, 255, 0.2);
-        margin: 1rem 0;
-        transition: all 0.4s ease;
-        cursor: pointer;
-        position: relative;
-    }
-
-    .role-card:hover {
-        transform: scale(1.03);
-        background: #f8f9fa;
-        border-color: rgba(0, 212, 255, 0.8);
-        box-shadow: 0 15px 40px rgba(0,212,255,0.3);
-    }
-
-    .role-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .role-title {
-        font-size: 1.3rem;
-        font-weight: 600;
-        color: #00d4ff;
-    }
-
-    .expand-icon {
-        font-size: 1.5rem;
-        color: #00d4ff;
-        transition: transform 0.3s ease;
-    }
-
-    .role-card:hover .expand-icon {
-        transform: rotate(90deg);
-    }
-
-    .role-responsibilities {
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease;
-        margin-top: 0;
-    }
-
-    .role-card:hover .role-responsibilities {
-        max-height: 600px;
-        opacity: 1;
-        margin-top: 1.5rem;
-    }
-
-    .role-responsibilities ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .role-responsibilities li {
-        padding: 0.7rem 0 0.7rem 1.5rem;
-        position: relative;
-        color: #555;
-        font-size: 0.95rem;
-        line-height: 1.6;
-    }
-
-    .role-responsibilities li::before {
-        content: '▹';
-        position: absolute;
-        left: 0;
-        color: #00d4ff;
-        font-weight: bold;
-        font-size: 1.2rem;
-    }
-
-    .role-brief {
-        color: #666;
-        font-size: 1rem;
-        margin-top: 0.5rem;
-        line-height: 1.6;
-    }
-
-    .custom-hr {
-        border: none;
-        height: 2px;
-        background: linear-gradient(to right, transparent, #00d4ff, transparent);
-        margin: 3rem 0;
     }
 
     @media (max-width: 768px) {
@@ -334,231 +228,151 @@ editor: visual
         }
     }
 </style>
-</head>
-<body>
 
-<h1>About</h1>
 
-<div class="about-section">
-    <h2>Current Role</h2>
-    
-    <div class="role-card">
-        <div class="role-header">
-            <div class="role-title">Product Manager - Biomarker Module Development</div>
-            <div class="expand-icon">▶</div>
-        </div>
-        <div class="role-brief">
-            Leading development of biomarker modules for omics research, working at the intersection of computational biology and AI-driven drug discovery.
-        </div>
-        <div class="role-responsibilities">
-            <strong style="color: #00d4ff; font-size: 1.05rem;">Key Responsibilities:</strong>
-            <ul>
-                <li>Spearheading biomarker module development and integration across multiple research platforms</li>
-                <li>Extracting and curating data from public databases using advanced LLM models (Llama and Gemini)</li>
-                <li>Implementing scripting-based approaches to streamline data curation workflows</li>
-                <li>Contributing to cross-functional module development by incorporating biomarkers as key features</li>
-                <li>Optimizing LLM prompts and evaluating model accuracy to enhance AI/ML pipeline performance</li>
-                <li>Collaborating closely with data engineers and data scientists to build innovative solutions</li>
-            </ul>
-        </div>
-    </div>
-</div>
+```
 
+::: {.content-section .about-section}
+### Product Manager
+**Partex.AI (formerly Innoplexus Consulting Pvt. Ltd.), Pune, India**
+
+I'm currently leading the development of a **biomarker module for omics research**, working at the intersection of computational biology and AI-driven drug discovery. My role involves close collaboration with data engineers and data scientists to build innovative solutions that accelerate pharmaceutical and biomedical research.
+
+**Key responsibilities include:**
+
+- Spearheading biomarker module development and integration across multiple research platforms
+- Extracting and curating data from public databases using advanced LLM models (Llama and Gemini)
+- Implementing scripting-based approaches to streamline data curation workflows
+- Contributing to cross-functional module development by incorporating biomarkers as key features
+- Optimizing LLM prompts and evaluating model accuracy to enhance AI/ML pipeline performance
+:::
+
+```{=html}
 <div class="custom-hr"></div>
+```
 
-<h2>Professional Experience</h2>
+::: {.content-section .about-section}
+## Professional Experience
 
-<div class="timeline">
-    <div class="timeline-item">
-        <div class="timeline-content">
-            <div class="timeline-year">2024 - Present</div>
-            <div class="timeline-title">Product Manager - Biomarker Module</div>
-            <div class="timeline-company">Pune, India</div>
-            <div class="timeline-description">
-                Leading development of biomarker modules for omics research. Collaborating with data engineers and scientists to integrate AI/ML approaches.
-            </div>
-            <div class="timeline-details">
-                <ul>
-                    <li>Spearheading biomarker module development and integration across multiple research platforms</li>
-                    <li>Utilizing LLM models (Llama, Gemini) for automated data extraction from public databases</li>
-                    <li>Implementing scripting-based approaches to streamline data curation workflows</li>
-                    <li>Optimizing LLM prompts and evaluating model accuracy to enhance AI/ML pipeline performance</li>
-                </ul>
-            </div>
-        </div>
-        <div class="timeline-dot"></div>
-    </div>
+### Associate Scientific Manager
+**Partex.AI (formerly Innoplexus Consulting Pvt. Ltd.), Pune, India**
 
-    <div class="timeline-item">
-        <div class="timeline-content">
-            <div class="timeline-year">2022 - 2024</div>
-            <div class="timeline-title">Associate Scientific Manager</div>
-            <div class="timeline-company">Pune, India</div>
-            <div class="timeline-description">
-                Led data curation for AI/ML-powered drug discovery modules in an agile, cross-functional environment.
-            </div>
-            <div class="timeline-details">
-                <div class="timeline-achievements">
-                    <strong>Key Achievements:</strong>
-                    <ul>
-                        <li>Enhanced LLM model performance through strategic prompt optimization and accuracy evaluation</li>
-                        <li>Streamlined data curation processes for multiple AI/ML modules</li>
-                        <li>Bridged the gap between scientific expertise and technical implementation</li>
-                        <li>Collaborated with product managers, data engineers, and data scientists</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="timeline-dot"></div>
-    </div>
+Led data curation initiatives for AI/ML-powered drug discovery modules in an agile, cross-functional environment. Collaborated with product managers, data engineers and data scientists to accelerate the drug discovery and development process.
 
-    <div class="timeline-item">
-        <div class="timeline-content">
-            <div class="timeline-year">2019 - 2022</div>
-            <div class="timeline-title">Associate Biomedical Scientist</div>
-            <div class="timeline-company">Precision Biomarker Laboratories, Cedars-Sinai Medical Center, Los Angeles, CA</div>
-            <div class="timeline-description">
-                Conducted R&D in clinical proteomics and biomarker discovery, driving improvements in laboratory workflows.
-            </div>
-            <div class="timeline-details">
-                <div class="timeline-achievements">
-                    <strong>Key Achievements:</strong>
-                    <ul>
-                        <li>Developed novel PTMomics platforms for post-translational modification analysis</li>
-                        <li>Supervised laboratory technicians and managed end-to-end project delivery</li>
-                        <li>Improved existing workflows through collaborative innovation</li>
-                        <li>Led study execution, report compilation, and stakeholder presentations</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="timeline-dot"></div>
-    </div>
+**Key achievements:**
 
-    <div class="timeline-item">
-        <div class="timeline-content">
-            <div class="timeline-year">2017 - 2019</div>
-            <div class="timeline-title">Postdoctoral Fellow</div>
-            <div class="timeline-company">University of Southern Denmark</div>
-            <div class="timeline-description">
-                Developed comprehensive pipeline for identifying post-translationally modified biomarkers in clinical samples.
-            </div>
-            <div class="timeline-details">
-                <ul>
-                    <li>Worked with Prof. Martin R. Larsen on cutting-edge proteomics research</li>
-                    <li>Advanced the field of clinical proteomics through innovative methodologies</li>
-                    <li>Published research in high-impact scientific journals</li>
-                </ul>
-            </div>
-        </div>
-        <div class="timeline-dot"></div>
-    </div>
-</div>
+- Enhanced LLM model performance through strategic prompt optimization and accuracy evaluation
+- Streamlined data curation processes for multiple AI/ML modules
+- Bridged the gap between scientific expertise and technical implementation
 
+### Associate Biomedical Scientist
+**Precision Biomarker Laboratories, Cedars-Sinai Medical Center, Los Angeles, CA, USA**
+
+Conducted research and development in clinical proteomics and biomarker discovery, driving improvements in laboratory workflows and computational analysis capabilities.
+
+**Key achievements:**
+
+- Developed novel PTMomics platforms for post-translational modification analysis
+- Supervised laboratory technicians and managed end-to-end project delivery
+- Improved existing workflows through collaborative innovation
+- Led study execution, report compilation, and stakeholder presentations
+
+### Postdoctoral Researcher
+**University of Southern Denmark, Odense, Denmark**
+
+Worked with Prof. Martin R. Larsen to develop a comprehensive pipeline for identifying post-translationally modified biomarkers in clinical samples, advancing the field of clinical proteomics.
+
+- Led an effort to develop a platform for the discovery of Cysteine, N-linked glycosylation and phosphorylation biomarkers to enhance diagnostic precision.
+- Analyzed high-complexity PTMomics data to identify plasma-based candidate biomarkers for the clinical stratification of ovarian cancer patients.
+- Directly supervised and collaborated with lab technicians and PhD candidates, ensuring technical accuracy and project continuity.
+- Presented findings to internal leadership and collaborators, translating complex data into comprehensive technical reports and strategic updates.
+
+### Postdoctoral Researcher
+**Turku Bioscience, Turku, Finland**
+
+Used capabilities of serum proteomics to uncover the molecular drivers of development, disease and immune regulation. My work bridged the gap between complex mass spectrometry data and actionable biological insights through the following core pillars:
+
+- Led large-scale serum proteome profiling to evaluate the impact of infant nutritional supplementation and pioneered methods to correlate maternal and child proteomes for longitudinal study.
+- Executed temporal serum proteome analysis for children developing Celiac Disease (CD), identifying molecular shifts and potential biomarkers preceding clinical diagnosis.
+- Conducted sophisticated interactomics measurements and data analysis for key T-cell transcription factors, mapping the protein-protein interaction networks that govern immune cell identity.
+- Bridged the skills gap by designing and delivering practical courses on proteomics data analysis, translating complex computational workflows into accessible training.
+:::
+
+```{=html}
 <div class="custom-hr"></div>
+```
 
-<h2>Education</h2>
+::: {.content-section .about-section}
+## Education
 
-<div class="timeline">
-    <div class="timeline-item">
-        <div class="timeline-content">
-            <div class="timeline-year">2012 - 2017</div>
-            <div class="timeline-title">PhD in Biochemistry</div>
-            <div class="timeline-company">University of Turku, Finland</div>
-            <div class="timeline-description">
-                Conducted research under Prof. Riitta Lahesmaa and Dr. Robert Moulder focusing on proteomics applications in clinical research.
-            </div>
-            <div class="timeline-details">
-                <div class="timeline-achievements">
-                    <strong>Research Focus:</strong>
-                    <ul>
-                        <li>Identified and validated serum protein biomarkers for Type 1 diabetes</li>
-                        <li>Investigated protein biomarkers for carotid atherosclerosis</li>
-                        <li>Applied mass spectrometry-based proteomics to clinical samples</li>
-                        <li>Developed computational methods for biomarker validation</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="timeline-dot"></div>
-    </div>
+### Doctor of Philosophy (Medical Microbiology and Immunology)
+**University of Turku, Finland**
 
-    <div class="timeline-item">
-        <div class="timeline-content">
-            <div class="timeline-year">2010 - 2012</div>
-            <div class="timeline-title">Master's Degree</div>
-            <div class="timeline-company">National Chemical Laboratory (NCL), India</div>
-            <div class="timeline-description">
-                Completed master's thesis in proteomics and mass spectrometry, establishing foundation for research career.
-            </div>
-            <div class="timeline-details">
-                <ul>
-                    <li>Worked under joint supervision of Drs. Mahesh J. Kulkarni and B. Santhakumari</li>
-                    <li>Gained expertise in advanced proteomics techniques</li>
-                    <li>Published research findings in peer-reviewed journals</li>
-                </ul>
-            </div>
-        </div>
-        <div class="timeline-dot"></div>
-    </div>
+Pursued PhD under the joint advisorship of Prof. Riitta Lahesmaa and Dr. Robert Moulder, focusing on proteomics applications in clinical and immunological research.
 
-    <div class="timeline-item">
-        <div class="timeline-content">
-            <div class="timeline-year">Bachelor's</div>
-            <div class="timeline-title">Pharmacy Degree</div>
-            <div class="timeline-company">India</div>
-            <div class="timeline-description">
-                Pharmacist by training, providing strong foundation in pharmaceutical sciences.
-            </div>
-            <div class="timeline-details">
-                <ul>
-                    <li>Strong foundation in pharmaceutical sciences and drug development principles</li>
-                    <li>Comprehensive understanding of medicinal chemistry and pharmacology</li>
-                </ul>
-            </div>
-        </div>
-        <div class="timeline-dot"></div>
-    </div>
-</div>
+**Research focus:**
 
+- Identified and validated serum protein biomarkers for Type 1 diabetes
+- Investigated protein biomarkers for carotid atherosclerosis
+- Applied mass spectrometry-based proteomics to study cellular proteomics.
+- Conducted proteomics data analysis courses
+
+### Master's Degree Thesis
+**National Chemical Laboratory (NCL), India**
+
+Completed master's thesis in mass spectrometry based proteomics area under the joint supervision of Drs. Mahesh J. Kulkarni and B. Santhakumari.
+
+### Pharmacy Degree
+
+Pharmacist by training, which provides a strong foundation in pharmaceutical sciences and drug development principles.
+:::
+
+```{=html}
 <div class="custom-hr"></div>
+```
 
-<div class="about-section">
-    <h2>Expertise</h2>
-    
-    <p><strong>Technical Skills:</strong></p>
-    <div style="margin: 1.5rem 0;">
-        <span class="skill-item">Mass Spectrometry Proteomics</span>
-        <span class="skill-item">PTM Analysis</span>
-        <span class="skill-item">Biomarker Discovery</span>
-        <span class="skill-item">Large Language Models</span>
-        <span class="skill-item">AI/ML Pipeline</span>
-        <span class="skill-item">Data Curation</span>
-        <span class="skill-item">Computational Biology</span>
-        <span class="skill-item">Omics Analysis</span>
-    </div>
+::: {.content-section .about-section}
+## Expertise
 
-    <p><strong>Professional Skills:</strong></p>
-    <div style="margin: 1.5rem 0;">
-        <span class="skill-item">Product Management</span>
-        <span class="skill-item">Cross-functional Collaboration</span>
-        <span class="skill-item">Project Leadership</span>
-        <span class="skill-item">Agile Methodology</span>
-        <span class="skill-item">Scientific Communication</span>
-        <span class="skill-item">Prompt Engineering</span>
-    </div>
+**Technical Skills:**
+
+```{=html}
+<div style="margin: 1.5rem 0;">
+<span class="skill-item">Mass Spectrometry Proteomics</span>
+<span class="skill-item">PTM Analysis</span>
+<span class="skill-item">Biomarker Discovery</span>
+<span class="skill-item">Large Language Models</span>
+<span class="skill-item">AI/ML Pipeline</span>
+<span class="skill-item">Data Curation</span>
+<span class="skill-item">Computational Biology</span>
+<span class="skill-item">Omics Analysis</span>
 </div>
+```
 
+**Professional Skills:**
+
+```{=html}
+<div style="margin: 1.5rem 0;">
+<span class="skill-item">Product Management</span>
+<span class="skill-item">Cross-functional Collaboration</span>
+<span class="skill-item">Project Leadership</span>
+<span class="skill-item">Agile Methodology</span>
+<span class="skill-item">Scientific Communication</span>
+<span class="skill-item">Prompt Engineering</span>
+</div>
+```
+:::
+
+```{=html}
 <div class="custom-hr"></div>
+```
 
-<div class="about-section">
-    <h2>Career Journey</h2>
-    <p>My career represents a unique evolution from bench scientist to AI-driven drug discovery leader. Starting with hands-on proteomics research during my PhD and postdoc, I developed deep expertise in mass spectrometry, biomarker discovery, and computational analysis.</p>
-    
-    <p>At Cedars-Sinai Medical Center, I translated this research expertise into clinical applications, developing new platforms and improving laboratory workflows.</p>
-    
-    <p>Today, I leverage this scientific foundation to lead biomarker module development, integrating cutting-edge AI/ML technologies with proteomics knowledge to accelerate drug discovery. This journey has equipped me with a rare combination of deep scientific expertise and practical AI/ML implementation skills, positioning me at the forefront of computational biology and pharmaceutical innovation.</p>
-</div>
+::: {.content-section .about-section}
+## Career Journey
 
-</body>
-</html>
+My career represents a unique evolution from bench scientist to AI-driven drug discovery leader. Starting with hands-on proteomics research during my PhD and postdoc, I developed deep expertise in mass spectrometry, biomarker discovery, and computational analysis. 
+
+At Cedars-Sinai Medical Center, I translated this research expertise into clinical applications, developing new platforms and improving laboratory workflows. 
+
+Today, I leverage this scientific foundation to lead biomarker module development, integrating cutting-edge AI/ML technologies with proteomics knowledge to accelerate drug discovery. This journey has equipped me with a rare combination of deep scientific expertise and practical AI/ML implementation skills, positioning me at the forefront of computational biology and pharmaceutical innovation.
+:::   

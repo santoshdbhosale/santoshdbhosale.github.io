@@ -1,216 +1,123 @@
 ---
-title: "Proteomics Meets Artificial Intelligence!"
+title: "Santosh D. Bhosale"
+description: "Proteomics Meets Artificial Intelligence"
+page-layout: full
 ---
 
-![](img/SDB1.jpg){width=200px fig-align="center"}
+::: {.columns}
 
-Hi, I'm Santosh D. Bhosale, a pharmacist by training who has evolved from hands-on mass spectrometry-based proteomics research to leading AI-driven drug discovery initiatives.
+::: {.column width="28%"}
+![](img/SDB1.jpg){.rounded-circle width=220}
 
-My journey began with exploring the properties of biologically important proteins using mass spectrometry-based proteomics technologies. I worked on qualitative and quantitative protein measurements, post-translational modifications, and protein-protein interactions using various computational methods to understand proteome complexity.
+### Connect
 
-Now, I'm leveraging this scientific foundation to lead the development of biomarker modules for omics research, integrating AI/ML approaches to accelerate pharmaceutical innovation and drug discovery processes.
+{{< iconify fa6-brands google-scholar >}} [Google Scholar](https://scholar.google.com/citations?user=YOUR_ID)
 
-![](img/Proteomics.png)
+{{< iconify fa6-brands linkedin >}} [LinkedIn](https://linkedin.com/in/santoshdbhosale)
 
-```{=html}
-<style>
-    .hero-animated {
-        position: relative;
-        min-height: 70vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
-        overflow: hidden;
-        margin: 3rem -2rem 2rem -2rem;
-        border-radius: 15px;
-    }
+{{< iconify fa6-brands github >}} [GitHub](https://github.com/santoshdbhosale)
 
-    .dna-background {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        opacity: 0.1;
-    }
+{{< iconify fa6-solid envelope >}} [Email](mailto:santoshdbhosale@gmail.com)
 
-    .helix {
-        position: absolute;
-        width: 4px;
-        height: 100%;
-        background: linear-gradient(to bottom, transparent, #00d4ff, transparent);
-        animation: flow 8s linear infinite;
-    }
+:::
 
-    .helix:nth-child(1) { left: 20%; animation-delay: 0s; }
-    .helix:nth-child(2) { left: 40%; animation-delay: 2s; }
-    .helix:nth-child(3) { left: 60%; animation-delay: 4s; }
-    .helix:nth-child(4) { left: 80%; animation-delay: 6s; }
+::: {.column width="4%"}
+:::
 
-    @keyframes flow {
-        0% { transform: translateY(-100%); }
-        100% { transform: translateY(100%); }
-    }
+::: {.column width="68%"}
 
-    .particle {
-        position: absolute;
-        width: 6px;
-        height: 6px;
-        background: #00d4ff;
-        border-radius: 50%;
-        animation: float 15s infinite;
-        opacity: 0.6;
-        box-shadow: 0 0 10px #00d4ff;
-    }
+## Hi, I'm Santosh D. Bhosale
 
-    @keyframes float {
-        0%, 100% { transform: translate(0, 0) scale(1); opacity: 0; }
-        10% { opacity: 0.6; }
-        90% { opacity: 0.6; }
-        50% { transform: translate(100px, -100px) scale(1.5); }
-    }
+A **pharmacist-turned-proteomics scientist** with a PhD and 15+ years of experience spanning wet-lab mass spectrometry, computational proteomics, and — most recently — AI/ML for drug discovery. I bridge deep domain biology with scalable data pipelines.
 
-    .hero-content {
-        position: relative;
-        z-index: 10;
-        text-align: center;
-        padding: 2rem;
-        max-width: 1200px;
-    }
+::: {.grid}
 
-    .hero-content h1 {
-        font-size: 3.5rem;
-        color: #ffffff;
-        margin-bottom: 1rem;
-        animation: fadeInUp 1s ease-out;
-        font-weight: 700;
-        letter-spacing: -1px;
-    }
+::: {.g-col-3 .text-center}
+### 20+
+*Peer-reviewed publications*
+:::
 
-    .title-highlight {
-        background: linear-gradient(120deg, #00d4ff, #7b2ff7);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        animation: gradientShift 3s ease infinite;
-    }
+::: {.g-col-3 .text-center}
+### 15+
+*Years research experience*
+:::
 
-    @keyframes gradientShift {
-        0%, 100% { filter: hue-rotate(0deg); }
-        50% { filter: hue-rotate(30deg); }
-    }
+::: {.g-col-3 .text-center}
+### 10+
+*Peer-reviewed manuscripts*
+:::
 
-    .hero-content .description {
-        font-size: 1.1rem;
-        color: #c0d8e0;
-        max-width: 800px;
-        margin: 0 auto 3rem;
-        line-height: 1.8;
-        animation: fadeInUp 1s ease-out 0.4s backwards;
-    }
+::: {.g-col-3 .text-center}
+### 1
+*Patent application (EU & USA)*
+:::
 
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(30px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
+:::
 
-    .tech-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        justify-content: center;
-        margin-bottom: 3rem;
-        animation: fadeInUp 1s ease-out 0.6s backwards;
-    }
+> **Currently:** Product Manager I (Growth) at **Partex.ai (Formerly Innoplexus Consulting Pvt. Ltd.), Pune** — leading biomarker module development for omics data, integrating Llama & Gemini LLMs with Python pipelines to accelerate pharmaceutical drug discovery.
 
-    .tag {
-        padding: 0.7rem 1.5rem;
-        background: rgba(0, 212, 255, 0.1);
-        border: 2px solid rgba(0, 212, 255, 0.3);
-        border-radius: 25px;
-        color: #00d4ff;
-        font-size: 0.9rem;
-        font-weight: 600;
-        transition: all 0.3s ease;
-        animation: pulse 2s infinite;
-    }
+:::
 
-    .tag:nth-child(1) { animation-delay: 0s; }
-    .tag:nth-child(2) { animation-delay: 0.2s; }
-    .tag:nth-child(3) { animation-delay: 0.4s; }
-    .tag:nth-child(4) { animation-delay: 0.6s; }
-    .tag:nth-child(5) { animation-delay: 0.8s; }
-    .tag:nth-child(6) { animation-delay: 1s; }
+:::
 
-    @keyframes pulse {
-        0%, 100% { 
-            box-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
-            transform: scale(1);
-        }
-        50% { 
-            box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
-            transform: scale(1.05);
-        }
-    }
+---
 
-    .tag:hover {
-        background: rgba(0, 212, 255, 0.2);
-        border-color: #00d4ff;
-        box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
-        transform: translateY(-3px);
-    }
+## What I Do
 
-    @media (max-width: 768px) {
-        .hero-animated { min-height: 60vh; }
-        .hero-content h1 { font-size: 2rem; }
-        .hero-content .description { font-size: 1rem; }
-    }
-</style>
+::: {.grid}
 
-<div class="hero-animated">
-    <div class="dna-background">
-        <div class="helix"></div>
-        <div class="helix"></div>
-        <div class="helix"></div>
-        <div class="helix"></div>
-    </div>
+::: {.g-col-4}
+### 🔬 Proteomics Research
+Mass spectrometry-based proteomics (DIA/DDA), PTM enrichment (phospho, glyco, cysteine), biomarker discovery from serum/plasma, label-free & isobaric quantification (TMT/iTRAQ).
+:::
 
-    <div class="hero-content">
-        <h1>Accelerating <span class="title-highlight">Drug Discovery</span><br>with AI & ML</h1>
-        
-        <p class="description">
-            Transforming proteomics expertise into AI-powered drug discovery solutions. Currently leading biomarker module development for omics research, integrating LLM technologies and data science to bridge computational biology with pharmaceutical innovation.
-        </p>
+::: {.g-col-4}
+### 🤖 AI/ML for Drug Discovery
+LLM-based data extraction (Llama, Gemini) from ClinicalTrials.gov & PubChem, Python automation for biocuration, ML pipeline development, agile collaboration with data engineers.
+:::
 
-        <div class="tech-tags">
-            <div class="tag">Biomarker Discovery</div>
-            <div class="tag">Omics Research</div>
-            <div class="tag">Prompt Engineering</div>
-            <div class="tag">Data Curation</div>
-            <div class="tag">Product Management</div>
-            <div class="tag">AI/ML Pipeline</div>
-        </div>
-    </div>
-</div>
+::: {.g-col-4}
+### 📦 Product & Project Management
+End-to-end delivery of omics projects (SOW to deliverable), cross-functional team leadership, biomarker module product ownership, stakeholder and vendor management.
+:::
 
-<script>
-    // Generate floating particles
-    const hero = document.querySelector('.hero-animated');
-    if (hero) {
-        for (let i = 0; i < 30; i++) {
-            const particle = document.createElement('div');
-            particle.className = 'particle';
-            particle.style.left = Math.random() * 100 + '%';
-            particle.style.top = Math.random() * 100 + '%';
-            particle.style.animationDelay = Math.random() * 15 + 's';
-            particle.style.animationDuration = (10 + Math.random() * 10) + 's';
-            hero.appendChild(particle);
-        }
-    }
-</script>
-```
+:::
+
+---
+
+## Career Highlights
+
+| Year | Role | Organisation | Location |
+|------|------|-------------|----------|
+| 2025–present | **Product Manager I – Growth** | Partex.ai (Formerly Innoplexus Consulting Pvt. Ltd.) | Pune, India |
+| 2024 | Associate Scientific Manager | Partex.ai (Formerly Innoplexus Consulting Pvt. Ltd.) | Pune, India |
+| 2023–2024 | Associate Biomedical Scientist | Cedars-Sinai Precision Biomarker Laboratories | Los Angeles, USA |
+| 2020–2022 | Postdoctoral Researcher | University of Southern Denmark | Odense, Denmark |
+| 2018–2019 | Postdoctoral Researcher | University of Turku – Turku Bioscience | Turku, Finland |
+| 2012–2018 | **PhD** | University of Turku | Turku, Finland |
+
+---
+
+## Selected Publications
+
+- Hendricks NG, **Bhosale SD**, et al. (2024). *An Inflection Point in High-Throughput Proteomics with Orbitrap Astral: Analysis of Biofluids, Cells, and Tissues.* **J Proteome Res**
+
+- **Bhosale SD**, Moulder R, et al. (2024). *Serum proteomics of mother-infant dyads carrying HLA-conferred type 1 diabetes risk.* **iScience**
+
+- Moulder R, **Bhosale SD**, et al. (2018). *Analysis of the plasma proteome using iTRAQ and TMT-based isobaric labeling.* **Mass Spectrometry Reviews**
+
+- **Bhosale SD**, Moulder R, et al. (2018). *Serum Proteomic Profiling to Identify Biomarkers of Premature Carotid Atherosclerosis.* **Sci Rep**
+
+- Moulder R, **Bhosale SD**, et al. (2015). *Serum proteomes distinguish children developing type 1 diabetes in a cohort with HLA-conferred susceptibility.* **Diabetes**
+
+👉 [View all 20+ publications and patent →](./cv/index.html)
+
+---
+
+## Awards
+
+🏆 **Doctoral Dissertation Award** — Orion Pharma, €5,000 (2018)  
+🏆 **Doctoral Dissertation Award** — Maud Kuistila Memorial Foundation, €5,000 (2018)  
+🎓 **Research Grant** — Hospital District of Southwest Finland & Turku City, €3,500 (2014)  
+✈️ **Travel Grant** — Turku Centre for Systems Biology, ETH Zürich Proteomics Course, €500 (2015)  
+🥇 **Dr. Ashok B. Vaidya Prize** — 1st place, SAACCP Oral Session (2009)
