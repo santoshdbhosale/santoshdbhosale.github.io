@@ -35,34 +35,6 @@ format:
     padding: 3.5rem 1.5rem 5rem;
   }
 
-  /* ── Currently Badge ── */
-  .now-badge {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-    background: linear-gradient(135deg, #eff6ff, #dbeafe);
-    border: 1.5px solid #bfdbfe;
-    border-radius: 14px;
-    padding: 1.1rem 1.4rem;
-    margin-bottom: 4rem;
-    font-size: 0.93rem;
-    color: #1e40af;
-    line-height: 1.6;
-  }
-  .now-dot {
-    width: 10px; height: 10px;
-    border-radius: 50%;
-    background: #2563eb;
-    flex-shrink: 0;
-    margin-top: 0.35rem;
-    box-shadow: 0 0 0 3px rgba(37,99,235,0.22);
-    animation: pulse 2s infinite;
-  }
-  @keyframes pulse {
-    0%,100% { box-shadow: 0 0 0 3px rgba(37,99,235,0.22); }
-    50%      { box-shadow: 0 0 0 6px rgba(37,99,235,0.07); }
-  }
-
   /* ── Shared section labels ── */
   .section-label {
     font-size: 0.72rem;
@@ -80,39 +52,24 @@ format:
     line-height: 1.2;
   }
 
-  /* ── Research Philosophy ── */
-  .philosophy { margin-bottom: 4rem; }
-  .philosophy-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
+  /* ── Philosophy Statement ── */
+  .philosophy-statement {
+    margin-bottom: 4rem;
   }
-  @media (max-width: 600px) { .philosophy-grid { grid-template-columns: 1fr; } }
-  .phil-card {
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 1.5rem;
-  }
-  .phil-card-icon { font-size: 1.6rem; margin-bottom: 0.6rem; }
-  .phil-card-title {
+  .phil-quote {
     font-family: var(--serif);
-    font-size: 1.1rem;
+    font-size: 1.35rem;
+    font-style: italic;
     color: var(--ink);
-    margin: 0 0 0.5rem;
-  }
-  .phil-card-text {
-    font-size: 0.9rem;
-    color: var(--ink-muted);
-    line-height: 1.7;
+    line-height: 1.6;
+    border-left: 3px solid var(--accent);
+    padding: 0.8rem 0 0.8rem 1.5rem;
     margin: 0;
   }
 
   /* ── Career Journey ── */
   .journey { margin-bottom: 4rem; }
-  .bench-to-bytes {
-    margin-bottom: 2.5rem;
-  }
+  .bench-to-bytes { margin-bottom: 2rem; }
   .bench-to-bytes p {
     font-size: 1rem;
     line-height: 1.8;
@@ -273,49 +230,21 @@ format:
 
 <div class="sdb-about">
 
+  <!-- ── PHILOSOPHY STATEMENT ── -->
+  <div class="philosophy-statement">
+    <blockquote class="phil-quote">
+      "From identifying proteomics biomarkers for disease to leading multi-omics biomarker platforms — the question hasn't changed, only the scale has."
+    </blockquote>
+  </div>
+
   <!-- ── CAREER JOURNEY ── -->
   <div class="journey">
     <p class="section-label">Career Journey</p>
     <h2 class="section-title">From Bench to Bytes</h2>
     <div class="bench-to-bytes">
-      <p>My scientific journey began in proteomics, when I gained my first level of research experience with my master thesis in the area of proteomics and mass spectrometry. This led me to pursue PhD-level research in mass spectrometry-based proteomics — working at the intersection of analytical chemistry and computational biology to decode protein function, biomarker discovery and validation and protein-protein interaction networks.</p>
-      <p>Over the years I accumulated expertise across the full proteomics pipeline: experimental design, LC-MS/MS data acquisition, database searching, quantitative analysis (label-free, TMT) and statistical interpretation. This foundation gave me an intuition for biological data that no amount of machine learning courses can replace.</p>
-      <p>Today, I channel that foundation into AI-driven drug discovery — leading the development of biomarker modules for omics research, building data pipelines and integrating large language models to transform raw biological data into actionable insights for indication priortization, drug-target identification and explainability in clinical trial predictions.</p>
-    </div>
-    <div class="timeline">
-
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-period">Foundation</div>
-        <div class="tl-role">B.Pharm & M.Pharm</div>
-        <div class="tl-place">Pharmaceutical sciences</div>
-        <div class="tl-desc">Grounded in drug action, pharmacokinetics and biochemistry. Became fascinated early by how molecular structure determines biological behaviour — a curiosity that never left.</div>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-period">PhD</div>
-        <div class="tl-role">Mass Spectrometry-Based Proteomics</div>
-        <div class="tl-place">Doctoral Research</div>
-        <div class="tl-desc">Deep focus on LC-MS/MS methodology, quantitative proteomics (label-free, iTRAQ), biomarker identification and validation and protein-protein interaction networks. Built expertise across the full experimental and computational pipeline — from sample prep to statistical interpretation.</div>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-period">Postdoctoral & Research</div>
-        <div class="tl-role">MS based-Proteomics</div>
-        <div class="tl-place">Academic and Industry Research</div>
-        <div class="tl-desc">Shifted focus toward post-translational modifications mapping, data integration and computational analysis. Computational proteomics pipelines for statistical proteomics, contributed to COVID-19 biomarker studies and began combining bioinformatics with machine learning approaches for biological data interpretation. Lead end‑to‑end delivery projects related to the proteomics (From SOW to deliverable). </div>
-      </div>
-
-      <div class="tl-item active">
-        <div class="tl-dot"></div>
-        <div class="tl-period">Now</div>
-        <div class="tl-role">AI/ML Drug Discovery Lead</div>
-        <div class="tl-place">Industry</div>
-        <div class="tl-desc">Leading biomarker module development for omics research. Architecting LLM-integrated data pipelines, directing data curation strategy, and managing cross-functional collaboration between bioinformaticians, data scientists, and pharmaceutical scientists.</div>
-      </div>
-
+      <p>My scientific journey began in proteomics, when I gained my first level of research experience with my master thesis in the area of proteomics and mass spectrometry. This led me to pursue PhD-level research in mass spectrometry-based proteomics — working at the intersection of analytical chemistry and computational biology to decode protein function, post-translational modifications, and protein-protein interaction networks.</p>
+      <p>Over the years I worked across the full breadth of proteomics — from disease biomarker discovery in serum and plasma, to cellular proteomics, protein-protein interaction studies, and PTM-specific platforms spanning phosphorylation, glycosylation and cysteine modifications. I also designed and taught practical proteomics data analysis courses, translating complex computational workflows into accessible training for the next generation of researchers.</p>
+      <p>Today, I channel that foundation into AI-driven drug discovery — leading the development of biomarker modules for omics research, building data pipelines and integrating large language models to transform raw biological data into actionable insights for pharmaceutical innovation.</p>
     </div>
   </div>
 
@@ -329,10 +258,9 @@ format:
         <ul class="exp-list">
           <li>LC-MS/MS experimental design & data acquisition</li>
           <li>Database searching (MaxQuant, Mascot, Proteome Discoverer)</li>
-          <li>Label-free and TMT quantification</li>
+          <li>Label-free and TMTquantification</li>
           <li>Post-translational modification (PTM) analysis</li>
           <li>Protein complex & interaction network mapping</li>
-          <li>Proteome complexity interpretation</li>
         </ul>
       </div>
       <div class="exp-card">
@@ -341,7 +269,7 @@ format:
           <li>LLM prompt engineering & pipeline integration</li>
           <li>ML model application for biological data</li>
           <li>AI-assisted biomarker candidate scoring</li>
-          <li>Data curation </li>
+          <li>Data curation and ETL for omics workflows</li>
           <li>Python & R for ML pipelines</li>
           <li>Evaluation frameworks for model outputs in science</li>
         </ul>
@@ -394,7 +322,7 @@ format:
       <a class="res-card" href="../blog/index.html">
         <div class="res-icon">✍️</div>
         <div class="res-title">Blog</div>
-        <div class="res-sub">Long-form writing on proteomics.</div>
+        <div class="res-sub">Long-form writing on proteomics - snapshot of previous publications.</div>
         <div class="res-cta">Read Posts →</div>
       </a>
     </div>

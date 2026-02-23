@@ -1,9 +1,8 @@
 # This file controls the settings for your Quarto template from www.marvinschmitt.com
-
 # website settings
 website:
-  title: "Santosh D. Bhosale"                                # Your name
-  description: "I am pharmacist by training and do mass spectrometry based proteomics"   # A brief slogan (optional)
+  title: "Santosh D. Bhosale"
+  description: "Proteomics scientist & AI/ML drug discovery lead. PhD · 15+ years · 20+ publications · Partex.ai"
   image: img/sdb.png
   
   # start of the navigation bar at the top of the website
@@ -49,16 +48,13 @@ project:
   output-dir: docs
   resources:
     - "cv/*.pdf"
-
   preview: 
     port: 22222
     browser: true
     watch-inputs: true
     navigate: true
-
 execute:
   freeze: true
-
 format:
   html:
     fontsize: 1.1em

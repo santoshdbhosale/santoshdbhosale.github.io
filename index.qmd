@@ -1,121 +1,550 @@
 ---
-page-layout: full
+title: "Hi, I'm Santosh D. Bhosale"
+format:
+  html:
+    page-layout: full
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 ---
 
-::: {.columns}
+```{=html}
+<style>
+  :root {
+    --ink:        #1a1a2e;
+    --ink-muted:  #4a4a6a;
+    --ink-light:  #8888aa;
+    --surface:    #f8f7f4;
+    --surface-2:  #f0ede8;
+    --white:      #ffffff;
+    --accent:     #2563eb;
+    --accent-warm:#e05c1a;
+    --green:      #16a34a;
+    --border:     rgba(26,26,46,0.09);
+    --serif:      'DM Serif Display', Georgia, serif;
+    --sans:       'DM Sans', system-ui, sans-serif;
+  }
 
-::: {.column width="28%"}
-![](img/SDB1.jpg){.rounded-circle width=220}
+  body { font-family: var(--sans); color: var(--ink); background: var(--surface); }
+  #quarto-content { padding: 0 !important; }
+  .page-columns { display: block !important; }
+  h1.title, .quarto-title { display: none !important; }
 
-### Connect
+  .sdb-home {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+  }
 
-{{< iconify fa6-brands google-scholar >}} [Google Scholar](https://scholar.google.com/citations?user=YOUR_ID)
+  /* ── HERO ── */
+  .hero {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 2.2rem;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  @media (max-width: 560px) {
+    .hero { grid-template-columns: 1fr; text-align: center; }
+    .hero-photo { margin: 0 auto; }
+  }
+  .hero-photo {
+    width: 120px; height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--surface-2);
+    box-shadow: 0 6px 24px rgba(26,26,46,0.10);
+  }
+  .hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+  .hero-name {
+    font-family: var(--serif);
+    font-size: 2rem;
+    line-height: 1.1;
+    color: var(--ink);
+    margin: 0 0 0.3rem;
+  }
+  .hero-role {
+    font-size: 0.9rem;
+    color: var(--accent);
+    font-weight: 500;
+    margin: 0 0 0.8rem;
+  }
+  .hero-bio {
+    font-size: 0.97rem;
+    color: var(--ink-muted);
+    line-height: 1.75;
+    margin: 0;
+    max-width: 520px;
+  }
 
-{{< iconify fa6-brands linkedin >}} [LinkedIn](https://linkedin.com/in/santoshdbhosale)
+  /* ── CURRENTLY ── */
+  .currently {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+    border: 1.5px solid #bfdbfe;
+    border-radius: 14px;
+    padding: 1.1rem 1.4rem;
+    margin-bottom: 3rem;
+    font-size: 0.93rem;
+    color: #1e40af;
+    line-height: 1.65;
+  }
+  .c-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #2563eb;
+    flex-shrink: 0;
+    margin-top: 0.38rem;
+    box-shadow: 0 0 0 3px rgba(37,99,235,0.2);
+    animation: pulseblue 2s infinite;
+  }
+  @keyframes pulseblue {
+    0%,100% { box-shadow: 0 0 0 3px rgba(37,99,235,0.2); }
+    50%      { box-shadow: 0 0 0 6px rgba(37,99,235,0.06); }
+  }
 
-{{< iconify fa6-brands github >}} [GitHub](https://github.com/santoshdbhosale)
+  /* ── STATS ── */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 3.5rem;
+  }
+  @media (max-width: 560px) { .stats { grid-template-columns: repeat(2,1fr); } }
+  .stat-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.2rem;
+    text-align: center;
+  }
+  .stat-num {
+    font-family: var(--serif);
+    font-size: 1.9rem;
+    color: var(--accent);
+    display: block;
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+  .stat-lbl {
+    font-size: 0.72rem;
+    color: var(--ink-light);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-weight: 500;
+  }
 
-{{< iconify fa6-solid envelope >}} [Email](mailto:santoshdbhosale@gmail.com)
+  /* ── SECTION LABELS ── */
+  .sec-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    margin: 0 0 0.5rem;
+  }
+  .sec-title {
+    font-family: var(--serif);
+    font-size: 1.8rem;
+    color: var(--ink);
+    margin: 0 0 1.4rem;
+    line-height: 1.2;
+  }
 
-:::
+  /* ── EXPERTISE ── */
+  .expertise { margin-bottom: 3.5rem; }
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  @media (max-width: 600px) { .expertise-grid { grid-template-columns: 1fr; } }
+  .exp-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.4rem;
+    transition: box-shadow 0.18s, transform 0.18s;
+  }
+  .exp-card:hover {
+    box-shadow: 0 4px 20px rgba(26,26,46,0.07);
+    transform: translateY(-2px);
+  }
+  .exp-icon { font-size: 1.5rem; margin-bottom: 0.6rem; display: block; }
+  .exp-title {
+    font-weight: 600;
+    font-size: 0.93rem;
+    color: var(--ink);
+    margin-bottom: 0.45rem;
+  }
+  .exp-desc {
+    font-size: 0.84rem;
+    color: var(--ink-muted);
+    line-height: 1.65;
+  }
+  .exp-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 0.75rem;
+  }
+  .exp-tag {
+    font-size: 0.7rem;
+    background: var(--surface-2);
+    color: var(--ink-light);
+    padding: 0.2rem 0.55rem;
+    border-radius: 99px;
+  }
 
-::: {.column width="4%"}
-:::
+  /* ── CAREER TABLE ── */
+  .career { margin-bottom: 3.5rem; }
+  .career-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    font-size: 0.88rem;
+  }
+  .career-table thead tr { background: var(--surface-2); }
+  .career-table th {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    padding: 0.8rem 1.2rem;
+    text-align: left;
+  }
+  .career-table td {
+    padding: 0.85rem 1.2rem;
+    color: var(--ink-muted);
+    border-top: 1px solid var(--border);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  .career-table tr:hover td { background: var(--surface); }
+  .career-table .year-cell { color: var(--accent); font-weight: 500; white-space: nowrap; }
+  .career-table .role-cell { font-weight: 600; color: var(--ink); }
+  .current-row td { background: rgba(37,99,235,0.03); }
 
-::: {.column width="68%"}
+  /* ── PUBLICATIONS ── */
+  .publications { margin-bottom: 3.5rem; }
+  .pub-list { display: flex; flex-direction: column; gap: 0.8rem; }
+  .pub-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.1rem 1.3rem;
+    display: grid;
+    grid-template-columns: 50px 1fr auto;
+    gap: 1rem;
+    align-items: start;
+    transition: border-color 0.18s;
+  }
+  .pub-card:hover { border-color: rgba(37,99,235,0.28); }
+  .pub-year {
+    font-family: var(--serif);
+    font-size: 1rem;
+    color: var(--accent);
+    font-weight: 700;
+    padding-top: 0.1rem;
+  }
+  .pub-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 0.25rem;
+    line-height: 1.45;
+  }
+  .pub-authors {
+    font-size: 0.8rem;
+    color: var(--ink-light);
+    font-style: italic;
+  }
+  .pub-badge {
+    font-size: 0.7rem;
+    background: rgba(37,99,235,0.07);
+    color: var(--accent);
+    border: 1px solid rgba(37,99,235,0.18);
+    padding: 0.18rem 0.55rem;
+    border-radius: 99px;
+    white-space: nowrap;
+    align-self: center;
+  }
+  .view-all {
+    display: inline-block;
+    margin-top: 1.2rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .view-all:hover { text-decoration: underline; }
 
-## Hi, I'm Santosh D. Bhosale
+  /* ── AWARDS ── */
+  .awards { margin-bottom: 3.5rem; }
+  .awards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+  @media (max-width: 560px) { .awards-grid { grid-template-columns: 1fr; } }
+  .award-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.1rem 1.3rem;
+    display: flex;
+    gap: 0.85rem;
+    align-items: flex-start;
+  }
+  .award-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 0.1rem; }
+  .award-title {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.2rem;
+    line-height: 1.4;
+  }
+  .award-detail { font-size: 0.78rem; color: var(--ink-light); }
+</style>
 
-A **pharmacist-turned-proteomics scientist** with a PhD and 15+ years of experience spanning wet-lab mass spectrometry, computational proteomics, and — most recently — AI/ML for drug discovery. I bridge deep domain biology with scalable data pipelines.
+<div class="sdb-home">
 
-::: {.grid}
+  <!-- ── HERO ── -->
+  <div class="hero">
+    <div class="hero-photo">
+      <img src="img/SDB1.jpg" alt="Santosh D. Bhosale" />
+    </div>
+    <div>
+      <h1 class="hero-name">Hi, I'm Santosh D. Bhosale</h1>
+      <p class="hero-role">Product Manager I · Proteomics Scientist · AI/ML Drug Discovery</p>
+      <p class="hero-bio">
+        A <strong>pharmacist-turned-proteomics scientist</strong> with a PhD and 15+ years of experience spanning wet-lab mass spectrometry, computational proteomics, and — most recently — AI/ML for drug discovery. I bridge deep domain biology with scalable data pipelines.
+      </p>
+    </div>
+  </div>
 
-::: {.g-col-3 .text-center}
-### 20+
-*Peer-reviewed publications*
-:::
+  <!-- ── CURRENTLY ── -->
+  <div class="currently">
+    <span class="c-dot"></span>
+    <div>
+      <strong>Currently:</strong> Product Manager I (Growth) at <strong>Partex.ai (formerly Innoplexus Consulting Pvt. Ltd.), Pune</strong> — Spearheading a biomarker discovery module powered by omics data and Llama & Gemini LLMs, where biomarker signals drive downstream acceleration across indication prioritisation, drug-target identification, and explainable clinical trial outcome prediction.
+    </div>
+  </div>
 
-::: {.g-col-3 .text-center}
-### 15+
-*Years research experience*
-:::
+  <!-- ── STATS ── -->
+  <div class="stats">
+    <div class="stat-card">
+      <span class="stat-num">15+</span>
+      <span class="stat-lbl">Years Research</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">20+</span>
+      <span class="stat-lbl">Publications</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">1</span>
+      <span class="stat-lbl">Patent EU &amp; USA</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">2×</span>
+      <span class="stat-lbl">Dissertation Awards</span>
+    </div>
+  </div>
 
-::: {.g-col-3 .text-center}
-### 10+
-*Peer-reviewed manuscripts*
-:::
+  <!-- ── EXPERTISE ── -->
+  <div class="expertise">
+    <p class="sec-label">What I Do</p>
+    <h2 class="sec-title">Proteomics Meets Artificial Intelligence</h2>
+    <div class="expertise-grid">
+      <div class="exp-card">
+        <span class="exp-icon">🔬</span>
+        <div class="exp-title">Proteomics Research</div>
+        <div class="exp-desc">Mass spectrometry-based proteomics (DIA/DDA), PTM enrichment (phospho, glyco, cysteine), biomarker discovery from serum/plasma, label-free &amp; isobaric quantification.</div>
+        <div class="exp-tags">
+          <span class="exp-tag">LC-MS/MS</span>
+          <span class="exp-tag">TMT/iTRAQ</span>
+          <span class="exp-tag">PTM Analysis</span>
+          <span class="exp-tag">DIA/DDA</span>
+        </div>
+      </div>
+      <div class="exp-card">
+        <span class="exp-icon">🤖</span>
+        <div class="exp-title">AI/ML for Drug Discovery</div>
+        <div class="exp-desc">LLM-based data extraction (Llama, Gemini) from ClinicalTrials.gov &amp; PubChem, Python automation for biocuration, ML pipeline development, agile collaboration with data engineers.</div>
+        <div class="exp-tags">
+          <span class="exp-tag">Llama</span>
+          <span class="exp-tag">Gemini</span>
+          <span class="exp-tag">Python</span>
+          <span class="exp-tag">Biocuration</span>
+        </div>
+      </div>
+      <div class="exp-card">
+        <span class="exp-icon">📦</span>
+        <div class="exp-title">Product &amp; Project Management</div>
+        <div class="exp-desc">End-to-end delivery of omics projects (SOW to deliverable), cross-functional team leadership, biomarker module product ownership, stakeholder and vendor management.</div>
+        <div class="exp-tags">
+          <span class="exp-tag">Product Mgmt</span>
+          <span class="exp-tag">SOW Delivery</span>
+          <span class="exp-tag">Stakeholders</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-::: {.g-col-3 .text-center}
-### 1
-*Patent application (EU & USA)*
-:::
+  <!-- ── CAREER ── -->
+  <div class="career">
+    <p class="sec-label">Experience</p>
+    <h2 class="sec-title">Career Highlights</h2>
+    <table class="career-table">
+      <thead>
+        <tr>
+          <th>Period</th>
+          <th>Role</th>
+          <th>Organisation</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="current-row">
+          <td class="year-cell">2025–present</td>
+          <td class="role-cell">Product Manager I – Growth</td>
+          <td>Partex.ai (formerly Innoplexus)</td>
+          <td>Pune, India</td>
+        </tr>
+        <tr>
+          <td class="year-cell">2024</td>
+          <td class="role-cell">Associate Scientific Manager</td>
+          <td>Partex.ai (formerly Innoplexus)</td>
+          <td>Pune, India</td>
+        </tr>
+        <tr>
+          <td class="year-cell">2023–2024</td>
+          <td class="role-cell">Associate Biomedical Scientist</td>
+          <td>Cedars-Sinai Precision Biomarker Laboratories</td>
+          <td>Los Angeles, USA</td>
+        </tr>
+        <tr>
+          <td class="year-cell">2020–2022</td>
+          <td class="role-cell">Postdoctoral Researcher</td>
+          <td>University of Southern Denmark</td>
+          <td>Odense, Denmark</td>
+        </tr>
+        <tr>
+          <td class="year-cell">2018–2019</td>
+          <td class="role-cell">Postdoctoral Researcher</td>
+          <td>University of Turku – Turku Bioscience</td>
+          <td>Turku, Finland</td>
+        </tr>
+        <tr>
+          <td class="year-cell">2012–2018</td>
+          <td class="role-cell">PhD Researcher</td>
+          <td>University of Turku</td>
+          <td>Turku, Finland</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-:::
+  <!-- ── PUBLICATIONS ── -->
+  <div class="publications">
+    <p class="sec-label">Research Output</p>
+    <h2 class="sec-title">Selected Publications</h2>
+    <div class="pub-list">
+      <div class="pub-card">
+        <div class="pub-year">2024</div>
+        <div>
+          <div class="pub-title">An Inflection Point in High-Throughput Proteomics with Orbitrap Astral: Analysis of Biofluids, Cells, and Tissues</div>
+          <div class="pub-authors">Hendricks NG, Bhosale SD, et al. · J Proteome Res</div>
+        </div>
+        <span class="pub-badge">Technology</span>
+      </div>
+      <div class="pub-card">
+        <div class="pub-year">2024</div>
+        <div>
+          <div class="pub-title">Serum proteomics of mother-infant dyads carrying HLA-conferred type 1 diabetes risk</div>
+          <div class="pub-authors">Bhosale SD, Moulder R, et al. · iScience</div>
+        </div>
+        <span class="pub-badge">Clinical</span>
+      </div>
+      <div class="pub-card">
+        <div class="pub-year">2018</div>
+        <div>
+          <div class="pub-title">Analysis of the plasma proteome using iTRAQ and TMT-based isobaric labeling</div>
+          <div class="pub-authors">Moulder R, Bhosale SD, et al. · Mass Spectrometry Reviews</div>
+        </div>
+        <span class="pub-badge">Methods</span>
+      </div>
+      <div class="pub-card">
+        <div class="pub-year">2018</div>
+        <div>
+          <div class="pub-title">Serum Proteomic Profiling to Identify Biomarkers of Premature Carotid Atherosclerosis</div>
+          <div class="pub-authors">Bhosale SD, Moulder R, et al. · Sci Rep</div>
+        </div>
+        <span class="pub-badge">Biomarkers</span>
+      </div>
+      <div class="pub-card">
+        <div class="pub-year">2015</div>
+        <div>
+          <div class="pub-title">Serum proteomes distinguish children developing type 1 diabetes in a cohort with HLA-conferred susceptibility</div>
+          <div class="pub-authors">Moulder R, Bhosale SD, et al. · Diabetes</div>
+        </div>
+        <span class="pub-badge">Biomarkers</span>
+      </div>
+    </div>
+    <a href="cv/index.html" class="view-all">View all 20+ publications and patent →</a>
+  </div>
 
-> **Currently:** Product Manager I (Growth) at **Partex.ai (Formerly Innoplexus Consulting Pvt. Ltd.), Pune** — leading biomarker module development for omics data, integrating Llama & Gemini LLMs with Python pipelines to accelerate pharmaceutical drug discovery.
+  <!-- ── AWARDS ── -->
+  <div class="awards">
+    <p class="sec-label">Recognition</p>
+    <h2 class="sec-title">Awards &amp; Grants</h2>
+    <div class="awards-grid">
+      <div class="award-card">
+        <div class="award-icon">🏆</div>
+        <div>
+          <div class="award-title">Doctoral Dissertation Award — Orion Pharma</div>
+          <div class="award-detail">€5,000 · 2018</div>
+        </div>
+      </div>
+      <div class="award-card">
+        <div class="award-icon">🏆</div>
+        <div>
+          <div class="award-title">Doctoral Dissertation Award — Maud Kuistila Memorial Foundation</div>
+          <div class="award-detail">€5,000 · 2018</div>
+        </div>
+      </div>
+      <div class="award-card">
+        <div class="award-icon">🎓</div>
+        <div>
+          <div class="award-title">Research Grant — Hospital District of Southwest Finland &amp; Turku City</div>
+          <div class="award-detail">€3,500 · 2014</div>
+        </div>
+      </div>
+      <div class="award-card">
+        <div class="award-icon">✈️</div>
+        <div>
+          <div class="award-title">Travel Grant — ETH Zürich Proteomics Course</div>
+          <div class="award-detail">€500 · 2015 · Turku Centre for Systems Biology</div>
+        </div>
+      </div>
+      <div class="award-card">
+        <div class="award-icon">🥇</div>
+        <div>
+          <div class="award-title">Dr. Ashok B. Vaidya Prize — 1st Place, SAACCP Oral Session</div>
+          <div class="award-detail">2009</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-:::
-
-:::
-
----
-
-## What I Do - Proteomics Meets Artificial Intelligence
-
-::: {.grid}
-
-::: {.g-col-4}
-### 🔬 Proteomics Research
-Mass spectrometry-based proteomics (DIA/DDA), PTM enrichment (phospho, glyco, cysteine), biomarker discovery from serum/plasma, label-free & isobaric quantification (TMT/iTRAQ).
-:::
-
-::: {.g-col-4}
-### 🤖 AI/ML for Drug Discovery
-LLM-based data extraction (Llama, Gemini) from ClinicalTrials.gov & PubChem, Python automation for biocuration, ML pipeline development, agile collaboration with data engineers.
-:::
-
-::: {.g-col-4}
-### 📦 Product & Project Management
-End-to-end delivery of omics projects (SOW to deliverable), cross-functional team leadership, biomarker module product ownership, stakeholder and vendor management.
-:::
-
-:::
-
----
-
-## Career Highlights
-
-| Year | Role | Organisation | Location |
-|------|------|-------------|----------|
-| 2025–present | **Product Manager I – Growth** | Partex.ai (Formerly Innoplexus Consulting Pvt. Ltd.) | Pune, India |
-| 2024 | Associate Scientific Manager | Partex.ai (Formerly Innoplexus Consulting Pvt. Ltd.) | Pune, India |
-| 2023–2024 | Associate Biomedical Scientist | Cedars-Sinai Precision Biomarker Laboratories | Los Angeles, USA |
-| 2020–2022 | Postdoctoral Researcher | University of Southern Denmark | Odense, Denmark |
-| 2018–2019 | Postdoctoral Researcher | University of Turku – Turku Bioscience | Turku, Finland |
-| 2012–2018 | **PhD** | University of Turku | Turku, Finland |
-
----
-
-## Selected Publications
-
-- Hendricks NG, **Bhosale SD**, et al. (2024). *An Inflection Point in High-Throughput Proteomics with Orbitrap Astral: Analysis of Biofluids, Cells, and Tissues.* **J Proteome Res**
-
-- **Bhosale SD**, Moulder R, et al. (2024). *Serum proteomics of mother-infant dyads carrying HLA-conferred type 1 diabetes risk.* **iScience**
-
-- Moulder R, **Bhosale SD**, et al. (2018). *Analysis of the plasma proteome using iTRAQ and TMT-based isobaric labeling.* **Mass Spectrometry Reviews**
-
-- **Bhosale SD**, Moulder R, et al. (2018). *Serum Proteomic Profiling to Identify Biomarkers of Premature Carotid Atherosclerosis.* **Sci Rep**
-
-- Moulder R, **Bhosale SD**, et al. (2015). *Serum proteomes distinguish children developing type 1 diabetes in a cohort with HLA-conferred susceptibility.* **Diabetes**
-
-👉 [View all 20+ publications and patent →](./cv/index.html)
-
----
-
-## Awards
-
-🏆 **Doctoral Dissertation Award** — Orion Pharma, €5,000 (2018)  
-🏆 **Doctoral Dissertation Award** — Maud Kuistila Memorial Foundation, €5,000 (2018)  
-🎓 **Research Grant** — Hospital District of Southwest Finland & Turku City, €3,500 (2014)  
-✈️ **Travel Grant** — Turku Centre for Systems Biology, ETH Zürich Proteomics Course, €500 (2015)  
-🥇 **Dr. Ashok B. Vaidya Prize** — 1st place, SAACCP Oral Session (2009)
+</div>
+```
