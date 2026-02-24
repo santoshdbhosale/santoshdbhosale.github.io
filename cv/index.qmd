@@ -1,46 +1,123 @@
 ---
 layout: page
-title: Curriculum vitae 
-excerpt: My current CV 
+title: Curriculum Vitae
+excerpt: Full academic CV — Santosh D. Bhosale
 execute:
-  freeze: true  # never re-render during project render
-engine: knitr 
+  freeze: true
+engine: knitr
 resources:
   - "cv.pdf"
- 
 cv:
   pdf: "cv.pdf"
-
 ---
 
-```{css echo=FALSE}
-.embed-container {
+```{=html}
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'DM Sans', system-ui, sans-serif; }
+
+  .cv-header {
+    max-width: 860px;
+    margin: 0 auto 2.5rem;
+    padding: 2rem 1.5rem 2rem;
+    border-bottom: 1px solid rgba(26,26,46,0.09);
+  }
+  .cv-header .sec-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #8888aa;
+    margin: 0 0 0.5rem;
+    display: block;
+  }
+  .cv-header h1 {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 2rem;
+    color: #1a1a2e;
+    margin: 0 0 0.5rem;
+    line-height: 1.2;
+  }
+  .cv-header p {
+    font-size: 0.95rem;
+    color: #4a4a6a;
+    line-height: 1.7;
+    margin: 0 0 1.4rem;
+    max-width: 560px;
+  }
+  .cv-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
+  .cv-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1.1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.16s;
+  }
+  .cv-btn-primary {
+    background: #2563eb;
+    color: white;
+    border: 1.5px solid #2563eb;
+  }
+  .cv-btn-primary:hover { background: #1d4ed8; color: white; }
+  .cv-btn-outline {
+    background: white;
+    color: #4a4a6a;
+    border: 1.5px solid rgba(26,26,46,0.12);
+  }
+  .cv-btn-outline:hover { border-color: #2563eb; color: #2563eb; }
+
+  /* PDF embed */
+  .embed-container {
     position: relative;
     padding-bottom: 129%;
     height: 0;
     overflow: hidden;
     max-width: 100%;
-}
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
+    border-radius: 12px;
+    border: 1px solid rgba(26,26,46,0.09);
+    box-shadow: 0 4px 24px rgba(26,26,46,0.07);
+  }
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-}
-```
+    border: none;
+  }
+</style>
 
-```{=html}
-<p class="text-center">
-  <a class="btn btn-primary btn-lg cv-download" href="`r rmarkdown::metadata$cv$pdf`" target="_blank">
-    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Download current CV
-  </a>
-</p>
+<div class="cv-header">
+  <span class="sec-label">Academic</span>
+  <h1>Curriculum Vitae</h1>
+  <p>Full academic CV including publications, research experience, education, awards, and grants. For a concise one-page overview, download the Resume PDF.</p>
+  <div class="cv-actions">
+    <a class="cv-btn cv-btn-primary" href="cv.pdf" target="_blank">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download Full CV
+    </a>
+    <a class="cv-btn cv-btn-outline" href="Resume.pdf" target="_blank">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      Resume PDF (1 page)
+    </a>
+    <a class="cv-btn cv-btn-outline" href="Thesis.pdf" target="_blank">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      PhD Thesis
+    </a>
+  </div>
+</div>
+
 <div class="embed-container">
   <iframe src="`r rmarkdown::metadata$cv$pdf`" style="border: 0.5px"></iframe>
 </div>
 ```
-
-

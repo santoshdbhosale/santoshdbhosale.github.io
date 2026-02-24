@@ -1,8 +1,9 @@
+
 ---
 author: ""
 title-block-banner: false
 page-layout: full
-description-meta: "Welcome to my blog, Here, you will find a collection of posts for some of the previously published articles"
+description-meta: "Blog — research summaries and commentary on proteomics, AI/ML, and drug discovery by Santosh D. Bhosale"
 listing:
     contents: 
       - "Serum-Proteomics-Pre-diabetic/index.qmd"
@@ -20,8 +21,67 @@ code-tools: false
 comments: false
 ---
 
-Welcome to my blog, here, you will find a collection of posts for some of the previously published articles!
+```{=html}
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'DM Sans', system-ui, sans-serif; }
 
-The snapshot of my research work is visualized in the following WordCloud using [Scholar Googler](https://shiny.rcg.sfu.ca/u/rdmorin/scholar_googler3/) shiny app. This app extracts information from research publications by using individual's Google Scholar ID.
+  .blog-intro {
+    max-width: 680px;
+    margin: 0 0 2.5rem;
+  }
+  .sec-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #8888aa;
+    margin: 0 0 0.5rem;
+    display: block;
+  }
+  .blog-intro h1 {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 2rem;
+    color: #1a1a2e;
+    margin: 0 0 0.8rem;
+    line-height: 1.2;
+  }
+  .blog-intro p {
+    font-size: 0.97rem;
+    color: #4a4a6a;
+    line-height: 1.75;
+    margin: 0;
+  }
 
-![](/img/wordcloud.png){width="500"}
+  .wordcloud-wrap {
+    margin: 0 0 3rem;
+  }
+  .wordcloud-wrap .wc-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #8888aa;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  .wordcloud-wrap p {
+    font-size: 0.88rem;
+    color: #4a4a6a;
+    margin: 0 0 0.9rem;
+    line-height: 1.65;
+  }
+</style>
+
+<div class="blog-intro">
+  <span class="sec-label">Writing & Research</span>
+  <h1>Blog</h1>
+  <p>Summaries and commentary on some of my published research — spanning serum proteomics, biomarker discovery and protein interactions.</p>
+</div>
+
+<div class="wordcloud-wrap">
+  <span class="wc-label">Research Topics</span>
+  <p>The following WordCloud visualizes some of my research topics, extracted from my Google Scholar publications using the <a href="https://shiny.rcg.sfu.ca/u/rdmorin/scholar_googler3/" target="_blank">Scholar Googler</a> Shiny app.</p>
+  <img src="/img/wordcloud.png" width="500" alt="Research wordcloud generated from Google Scholar publications" />
+</div>
+```
