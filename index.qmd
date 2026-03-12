@@ -552,7 +552,7 @@ format:
       <div class="exp-card">
         <span class="exp-icon">🤖</span>
         <div class="exp-title">AI/ML for Drug Discovery</div>
-        <div class="exp-desc">LLM-based data extraction (Llama, Gemini) from ClinicalTrials.gov &amp; PubChem, Python automation for biocuration, ML pipeline development, agile collaboration with data engineers.</div>
+        <div class="exp-desc">LLM-based data extraction (Llama, Gemini, Claude) from ClinicalTrials.gov &amp; PubChem, Python automation for biocuration, ML pipeline development, agile collaboration with data engineers.</div>
         <div class="exp-tags">
           <span class="exp-tag">Llama</span>
           <span class="exp-tag">Gemini</span>
@@ -563,7 +563,7 @@ format:
       <div class="exp-card">
         <span class="exp-icon">📦</span>
         <div class="exp-title">Product &amp; Project Management</div>
-        <div class="exp-desc">End-to-end delivery of omics projects (SOW to deliverable), cross-functional team leadership, biomarker module product ownership, stakeholder and vendor management.</div>
+        <div class="exp-desc">Developing biomarker module that underpins target identification, indication prioritisation, and clinical trial prediction, stakeholder management.</div>
         <div class="exp-tags">
           <span class="exp-tag">Product Mgmt</span>
           <span class="exp-tag">SOW Delivery</span>
