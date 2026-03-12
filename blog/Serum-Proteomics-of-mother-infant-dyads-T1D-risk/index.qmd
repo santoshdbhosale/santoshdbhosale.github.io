@@ -12,7 +12,7 @@ image: fig/Study_design.png
 
 **The Early Dietary Intervention and Later Signs of Beta-Cell Autoimmunity study** was conducted to examine that how usage of two different research infant influenced the development of beta-cell autoimmunity. The samples collected in the study included serum from the mother during pregnancy, at and after delivery, and from the children at different time intervals in the first year of life (cord blood, 3, 6, 9 and 12 months). Using a mass spectrometry based proteomics approach we have determine protein expression profiles for the mothers and children samples and evaluated the links between the mother and child, dietary intervention and other metadata.
 
-![Graphical abstract. Serum proteomics of mother-infant dyads with HLA-conferred susceptibility to type 1 diabetes, covering samples from the third trimester through the first year of infant life.](fig/study_design.png)
+![Graphical abstract. Serum proteomics of mother-infant dyads with HLA-conferred susceptibility to type 1 diabetes, covering samples from the third trimester through the first year of infant life.](fig/Study_design.png)
 
 **Methods:** Undepleted serum samples (Mother-child pairs) were denatured, reduced and alkylated, and digested with trypsin. The desalted peptides were analysed in randomized batches in triplicate using tandem mass spectrometry (LC-MS/MS) with a label free quantification (LFQ) approach. A Q Exactive Orbitrap mass spectrometer was used in data dependent acquisition mode. The mass spectrometry raw files were searched using MaxQuant to enable the protein identification and quantification. The LFQ data was then analysed using Perseus and R.
 
