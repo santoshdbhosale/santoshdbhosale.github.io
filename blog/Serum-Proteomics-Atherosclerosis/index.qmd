@@ -4,6 +4,7 @@ date: 2020-11-11
 categories:
   - publications
   - serum
+  - carotid atherosclerosis
 image: fig/roc-plot.png
 ---
 Atherosclerotic cardiovascular diseases are the major causes of mortality and morbidity in developed world. Thickening of the carotid arterial wall (plaque formation) are indicative of active atherosclerotic process. 
