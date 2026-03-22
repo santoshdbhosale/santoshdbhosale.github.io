@@ -1,5 +1,5 @@
 ---
-title: "AP-MS to Study FOSL Related Proteins Interactome"
+title: "Decoding FOSL Protein Interactions in T Cells Using Affinity Purification Mass Spectrometry"
 date: 2021-09-16
 categories:
   - publications

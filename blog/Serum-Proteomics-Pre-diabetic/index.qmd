@@ -1,5 +1,5 @@
 ---
-title: "Serum Proteomics Pre diabetic"
+title: "Catching Type 1 Diabetes Before the Immune System Sounds the Alarm"
 date: 2020-10-27
 categories:
   - publications

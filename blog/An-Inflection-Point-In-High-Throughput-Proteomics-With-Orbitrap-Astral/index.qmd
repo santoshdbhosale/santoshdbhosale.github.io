@@ -1,5 +1,5 @@
 ---
-title: "An inflection point in high throughput proteomics with orbitrap astral"
+title: "Orbitrap Astral: A New Era for High-Throughput Proteomics?"
 date: 2026-03-21
 categories:
   - publications

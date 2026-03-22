@@ -1,5 +1,5 @@
 ---
-title: "Serum Proteomics Atherosclerosis"
+title: "Can Blood Proteins Reveal Hidden Risk of Carotid Atherosclerosis?"
 date: 2020-11-11
 categories:
   - publications

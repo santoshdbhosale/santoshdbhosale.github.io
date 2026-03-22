@@ -1,5 +1,5 @@
 ---
-title: "Serum Proteomics of mother infant dyads: T1D risk"
+title: "Tracking Type 1 Diabetes Risk from Mother to Infant via Serum Proteomics"
 date: 2024-06-21
 categories:
   - publications
