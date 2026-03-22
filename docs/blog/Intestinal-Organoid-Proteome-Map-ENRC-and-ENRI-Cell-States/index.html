@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-03-21">
+<meta name="dcterms.date" content="2021-03-09">
 
-<title>Santosh D. Bhosale - Orbitrap Astral: A New Era for High-Throughput Proteomics?</title>
+<title>Santosh D. Bhosale - Visualizing Organoid Proteomics Data Interactively with Clustergrammer</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -79,7 +79,7 @@ gtag('config', 'G-GVC1LWDBTL', { 'anonymize_ip': true});
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -159,20 +159,19 @@ gtag('config', 'G-GVC1LWDBTL', { 'anonymize_ip': true});
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    </div>
+    
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Orbitrap Astral: A New Era for High-Throughput Proteomics?</h1>
+<h1 class="title">Visualizing Organoid Proteomics Data Interactively with Clustergrammer</h1>
   <div class="quarto-categories">
     <div class="quarto-category">publications</div>
     <div class="quarto-category">Proteomics &amp; Methods</div>
     <div class="quarto-category">Cell &amp; Tissue Models</div>
-    <div class="quarto-category">biofluids</div>
-    <div class="quarto-category">Biomarkers</div>
+    <div class="quarto-category">Disease &amp; Clinical</div>
+    <div class="quarto-category">heatmap</div>
   </div>
   </div>
 
@@ -184,7 +183,7 @@ gtag('config', 'G-GVC1LWDBTL', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 21, 2026</p>
+      <p class="date">March 9, 2021</p>
     </div>
   </div>
   
@@ -196,55 +195,52 @@ gtag('config', 'G-GVC1LWDBTL', { 'anonymize_ip': true});
 </header>
 
 
-<p><strong>Background:</strong> High-throughput proteomics has dramatically improved biomedical research, but it came at cost of proteomics depth. The reason being, identifying thousands of proteins requires longer LC gradient times, which limits how many samples can be processed in a clinical or large-cohort setting. Additionally, the choice of data acquisition mode, whether DDA or DIA played an important role in shaping this trade-off. The introduction of the Orbitrap Astral mass spectrometer marked a significant turning point in resolving this trade-off. With the scan speeds up to 200 Hz and a highly parallelizable data acquisition mode, the Astral mass analyzer enables deep proteome coverage at speeds that were previously not achievable. This technical note, published in Journal of Proteome Research and carried out at the Precision Biomarker Laboratories, Cedars-Sinai Medical Center, presents a comprehensive workflow that benchmarks the Orbitrap Astrals performance across three major sample categories: biofluids (plasma, dried blood spots), cells (HeLa, PBMCs, HEK293) and tissues (mouse heart, liver, lung and intestine).</p>
+<p><strong>Background:</strong> Celiac disease (CD) is an autoimmune disease triggered by gluten exposure, characterized by the progressive disruption of the intestinal epithelium, specifically, impaired differentiation of the crypt–villus axis. A key challenge in studying CD is accessing the intestinal compartment without the confounding complexity of extra-epithelial tissue. Organoid models address this by enabling three-dimensional, <em>in vitro</em> representation of the intestinal epithelium from Lgr5+ intestinal stem cells. We used a mouse mini-gut organoid model to characterize the proteomes of two key intestinal states — crypt-like (ENRC) and differentiated enterocyte-like (ENRI) cells — and crossed these findings against published human CD biopsy data to identify disease-relevant markers.</p>
 <p><strong>Methods:</strong></p>
 <ul>
-<li><p>Central to the workflow was automation at every step. For cell and tissue lysis, we leveraged Adaptive focused acoustics (AFA) technology on a Covaris LE220-plus sonicator for efficient and reproducible homogenization in a plate format without manual bead-beating steps. The protein digestion was automated using the SP3 (single-pot, solid-phase-enhanced sample preparation) protocol run on a Beckman i7 automated workstation. Each steps, from bead aliquoting and reduction to alkylation and overnight trypsin digestion was performed entirely on deck for 18 hours at 37 °C and 1200 rpm. Together, these automations significantly reduced human intervention while maximizing reproducibility across samples.</p></li>
-<li><p>Plasma samples were prepared using four different protocol to evaluate how complementary approaches can improve proteome depth in a sample type challenged by an exceptionally high dynamic range (over 10 to 12 orders of magnitude).</p>
-<ul>
-<li><p>naïve or undepleted,</p></li>
-<li><p>antibody-depleted (Top-14)</p></li>
-<li><p>perchloric acid (PerCA) precipitated</p></li>
-<li><p>Seer nanoparticle fractionation</p></li>
-</ul></li>
-<li><p>The digested peptides samples spanning cells, tissues and plasma prepared using different methods were separated using a 150 μm × 15 cm Evosep column (1.9 μm particle size, PepSep) coupled to the NeoVanquish LC system and analysed in DIA mode on Thermo’s Orbitrap Astral mass spectroemter. For each gradient length, two DIA window sizes were compared — a quantitation-optimised larger window (e.g., 3 Th for the 24 min gradient) and a smaller window (e.g., 2 Th) to assess the trade-off between identification depth and quantitative accuracy. The mass spectrometry raw files were searched against the UniProt human and mus musculus reviewed databases using DIA-NN v1.8.1 in library-free mode via in-house bioinformatics platform called ProEpic. To assess both proteome depth and technical reproducibility, a 3×3 study design (three replicates on three separate days) was applied to cells, tissue and biofluid proteome.</p></li>
+<li>Mouse Lgr5+ intestinal stem cells were grown in Matrigel, with variation of Wnt signaling to establish two distinct organoid states: <strong>ENRC</strong> (crypt-like, Wnt-stimulated) and <strong>ENRI</strong> (differentiated enterocyte-like, Wnt-inhibited).</li>
+<li>Following filter-assisted sample preparation (FASP), tryptic digested peptides from cellular lysates of three biological replicates were analyzed by LC–MS/MS on a Q Exactive HF in data-dependent acquisition (DDA) mode.</li>
+<li>Label-free quantification (MaxLFQ) was performed using MaxQuant and statistical comparisons were made using the reproducibility-optimized test statistic (ROTS) at FDR ≤ 0.05.</li>
+<li>The detected proteome was cross-compared against two published human CD biopsy datasets: (i) genome-wide RNA-seq from PaxFPE duodenal biopsies after gluten challenge and (ii) proteomics from FFPE biopsies before and after a 14-day gluten challenge, including laser capture microdissection (LCM) of the epithelial compartment.</li>
 </ul>
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><img src="fig/Study-design.png" class="img-fluid figure-img"></p>
-<figcaption class="margin-caption">Graphical abstract. Comprehensive proteomics workflow benchmarking the Orbitrap Astral across diverse biospecimen types with automated sample preparation and DIA acquisition.</figcaption>
-</figure>
-</div>
-<p><strong>Results:</strong> The study delivered five notable findings.</p>
+<p><strong>Results:</strong> The analysis identified 4,850 protein groups, with 74% significantly changing between the two organoid states. Key findings included:</p>
 <ul>
-<li><p><strong>Exceptional proteome depth at short gradient times.</strong> For HeLa cell digests, a 200 ng injection run on 45 min gradient covered approximately 90% of the expressed proteome, while an 8 min gradient delivered 78% as many identifications in less than 1/5 of the time. For cells and tissues analysed with a 24 min gradient, protein group identifications consistently exceeded 10,000. Importantly, the depth of coverage extended down to proteins present at approximately 100 copies per cell, with the lowest detected protein estimated at just 13 copies per cell. This level of sensitivity opens up detection of very low-abundance regulatory and signalling proteins that would be missed by less sensitive platforms.</p></li>
-<li><p><strong>DIA window size trade-offs depend on gradient length.</strong> Smaller DIA windows (2 Th) consistently yielded more protein identifications than larger windows (3 Th) but at the cost of quantitative precision. With a 24 min gradient, the 2 Th window noticeably skewed the CV distribution compared to 3 Th, though average CVs remained below 13% for HeLa cells and 20% for plasma (Fig 1). Importantly, this trade-off was far less pronounced at shorter gradient lengths, with 11 min gradient showed little practical difference between window sizes. This suggests that for high-throughput screening studies where throughput is prioritised, shorter gradients with larger windows offer an excellent balance of speed, depth and reproducibility, while longer gradients with smaller windows are better suited for discovery-focused experiments where maximum identification depth is the priority.</p></li>
+<li><strong>ENRC (crypt-like) cells</strong> were enriched in proteins associated with DNA replication, mitosis and stem cell maintenance — including all six members of the DNA replication licensing factor MCM complex (MCM2–7), which were also upregulated in the gluten-challenge biopsy data.</li>
+<li><strong>ENRI (differentiated) cells</strong> showed strong enrichment of brush border enzymes and nutrient transporters — trehalase, angiotensin-converting enzyme (ACE), intestinal fatty acid-binding protein (FABP2) and solute carrier families — which were correspondingly downregulated in CD biopsies, consistent with the loss of mature enterocytes.</li>
+<li>Cross-comparison with the CD biopsy data revealed that markers of the undifferentiated, crypt-like state were predominantly upregulated (165 of 181), while enterocyte-like markers were predominantly downregulated (191 of 221), together reflecting crypt hyperplasia and villus atrophy — hallmarks of active CD.</li>
+<li>The data also highlighted proteins with more complex behavior, such as the polymeric immunoglobulin receptor (PIGR), which was enriched in ENRI cells yet upregulated in the biopsy gluten challenge, possibly linked to disruption of the IgA transcytosis axis in CD.</li>
+<li>The detected proteome included 280 enterocyte, 128 tuft cell, 45 stem cell and 15 Paneth cell markers, collectively affirming the organoid model’s representativeness of the intestinal epithelium.</li>
 </ul>
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><img src="fig/Fig 1.png" class="img-fluid figure-img"></p>
-<figcaption class="margin-caption">A) CV distributions for naïve plasma and HeLa cells across three gradient lengths, each tested with two DIA window sizes (2 Th and 3 Th). Median %CVs are overlaid on each box plot. B) CV profiles across all identified proteins in naïve and depleted plasma, compared across 24- and 45-minute runs. FDA-approved circulating biomarkers are highlighted in red.</figcaption>
-</figure>
-</div>
-<ul>
-<li><p><strong>Quantitative reproducibility is strong, especially at shorter gradients.</strong> The reproducibility across HeLa injections was equally strong as more than 80% of proteins showed a coefficient of variation (CV) below 20%, a widely accepted benchmark for reliable quantification. Interestingly, shorter gradients produced tighter CV distributions than longer ones, likely because faster runs favor sharper chromatographic peaks. In naïve plasma, one of the most challenging sample types in proteomics — a 45-minute gradient still identified over 1,100 proteins with good quantitative precision. Between 91 and 122 FDA-approved circulating biomarkers were detected depending on the sample preparation and gradient length used, the vast majority were below 20% CV threshold (Fig 1). Even in naïve (undepleted) plasma — the most challenging condition — low-abundance markers including Mucin-16 (CA125), pancreatic triacylglycerol lipase (PNLIP) and CD36 were detectable.</p></li>
-<li><p><strong>Plasma depletion strategies are complementary.</strong> A direct comparison of naïve, antibody-depleted, PerCA-precipitated and Seer nanoparticle-treated plasma revealed that no single method fully overlapped with the others in protein identifications. It was observed that preparations were evidently complementary, each accessing a distinct slice of the plasma proteome (Fig 2). PerCA precipitation delivered over 1,500 identifications, competitive with antibody depletion, at considerably lower cost. The relative cost of these approaches is worth highlighting for cohort design decisions: PerCA &lt; antibody depletion &lt; nanoparticle fractionation. For large clinical cohorts where cost per sample is a real constraint, PerCA precipitation offers a practical route to deeper coverage without the expense of nanoparticle-based platforms. Each Seer nanoparticle replicate comprised five injections (one per nanoparticle fraction), an important detail when interpreting the depth figures for that preparation. Beyond plasma, dried blood spots were also included as a biofluid type, extending the workflow’s applicability to minimally invasive sample collection formats relevant in clinical and field settings.</p></li>
-</ul>
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><img src="fig/Fig 2.png" class="img-fluid figure-img"></p>
-<figcaption class="margin-caption">A) Protein abundance rank plots for naïve and depleted plasma using the 24-minute, 3 Th DIA method. B) Venn diagram showing protein identification overlap between naïve plasma and three depletion strategies — Top-14 antibody depletion, PerCA precipitation, and Seer Proteograph fractionation.</figcaption>
-</figure>
-</div>
-<ul>
-<li><strong>Challenging sample types — PBMCs and cardiac tissue.</strong> For PBMCs, the platform achieved close to 9,000 protein identifications on a 24-minute gradient, representing the most extensive proteome coverage reported for this cell type at this level of throughput. Reactome pathway enrichment of these identifications spanned metabolism, immune response, cell cycle and disease — reflecting the full range of cellular responses that could be interrogated in a high-throughput immunology setting. Cardiac tissue is notoriously difficult to profile deeply because high-abundant sarcomeric myofilament proteins, responsible for the heart’s contractile function masks low-abundance species, much albumin does in plasma. Despite this, over 10,000 protein groups were identified across murine tissues when searched together, corresponding to 8,928 unique proteins. Within heart tissue alone, more than 800 of the estimated 1,100–1,400 mitochondrial proteins were identified, demonstrating that the platform can access functionally important low-abundance compartments even in proteomically challenging matrices.</li>
-</ul>
-<p>Taken togther, this work establishes a robust, end-to-end platform — from automated sample preparation to deep DIA acquisition — that is practical for translational research at scale. The combination of AFA assisted lysis, automated SP3 digestion and the Orbitrap Astral directly addresses the bottlenecks that have historically limited large-cohort proteomics studies. The window size analysis provides concrete guidance for study design decisions and the plasma depletion comparison gives researchers a cost-aware framework for choosing the right preparation strategies. These findings carry direct implications for biomarker discovery programs where both depth and reproducibility across hundreds of patient samples are essential.</p>
-<p>The mass spectrometry data have been deposited in ProteomeXchange under dataset <a href="https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD054015">PXD054015</a>.</p>
-<p><strong>Full citation:</strong> Hendricks NG, Bhosale SD, Keoseyan AJ, Ortiz J, Stotland A, Seyedmohammad S, Nguyen CDL, Bui JT, Moradian A, Mockus SM, Van Eyk JE. An Inflection Point in High-Throughput Proteomics with Orbitrap Astral: Analysis of Biofluids, Cells, and Tissues. J Proteome Res. 2024;23(9):4163–4169. <a href="https://doi.org/10.1021/acs.jproteome.4c00384" class="uri">https://doi.org/10.1021/acs.jproteome.4c00384</a></p>
-<p><strong>Note:</strong> The custom R scripts and associated data frames are freely available at <a href="https://github.com/santoshdbhosale/R_scripts_Proteomics_analysis.git">https://github.com/santoshdbhosale/R_scripts_Proteomics_analysis</a> and were used to generate the figures presented in the above manuscript.</p>
+<p><strong>Data visualization:</strong></p>
+<blockquote class="blockquote">
+<p><strong>Data:</strong> Input file: MG.tsv — a tab-separated matrix of label-free quantification (LFQ) protein intensities exported from Perseus after MaxQuant processing. Rows are protein groups, columns are six biological replicates across two organoid states — three crypt-like (ENRC1–3) and three enterocyte-like (ENRI1–3).</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>The interactive heatmap below visualizes Z-score normalized protein intensities across ENRC and ENRI cells for a curated set of intestinal cell-type markers, sorted by their anticipated anatomical location (crypt vs.&nbsp;villus). It was generated using the <a href="https://clustergrammer.readthedocs.io/">clustergrammer</a> widget within a Jupyter notebook and was not included in the original publication. This tool developed by the Ma’ayan Laboratory (Icahn School of Medicine at Mount Sinai). It supports hierarchical clustering and interactive exploration of high-dimensional biological data, and integrates cleanly into a notebook workflow — making it far more useful than a static heatmap for datasets of this scale.</p>
+</blockquote>
+<section id="interactive-heatmap-notebook" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-heatmap-notebook">Interactive Heatmap &amp; Notebook</h2>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td>🌐 Interactive Heatmap</td>
+<td><a href="https://santoshdbhosale.github.io/MG/20210309_MG.html">Click to explore</a></td>
+</tr>
+<tr class="even">
+<td>📓 View Notebook (static)</td>
+<td><a href="https://nbviewer.org/github/santoshdbhosale/MG/blob/main/20210309_MG.ipynb">nbviewer</a></td>
+</tr>
+<tr class="odd">
+<td>💻 GitHub Repository</td>
+<td><a href="https://github.com/santoshdbhosale/MG">santoshdbhosale/MG</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Full citation:</strong> Moulder R*, Bhosale SD*, Viiri K, Lahesmaa R. Comparative proteomics analysis of the mouse mini-gut organoid: insights into markers of gluten challenge from celiac disease intestinal biopsies. <em>Front. Mol. Biosci.</em> 2024;11:1446822. <a href="https://doi.org/10.3389/fmolb.2024.1446822" class="uri">https://doi.org/10.3389/fmolb.2024.1446822</a></p>
+<p><strong>Mass spectrometry data:</strong> Available via ProteomeXchange at <a href="https://www.ebi.ac.uk/pride/archive/projects/PXD025690">PXD025690</a>.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

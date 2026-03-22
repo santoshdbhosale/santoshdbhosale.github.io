@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-03-21">
+<meta name="dcterms.date" content="2022-02-02">
 
-<title>Santosh D. Bhosale - Orbitrap Astral: A New Era for High-Throughput Proteomics?</title>
+<title>Santosh D. Bhosale - Clustergrammer Heatmap of ECFC Proteomics Across COVID-19 Severity Groups</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -79,7 +79,7 @@ gtag('config', 'G-GVC1LWDBTL', { 'anonymize_ip': true});
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -159,20 +159,19 @@ gtag('config', 'G-GVC1LWDBTL', { 'anonymize_ip': true});
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    </div>
+    
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Orbitrap Astral: A New Era for High-Throughput Proteomics?</h1>
+<h1 class="title">Clustergrammer Heatmap of ECFC Proteomics Across COVID-19 Severity Groups</h1>
   <div class="quarto-categories">
     <div class="quarto-category">publications</div>
     <div class="quarto-category">Proteomics &amp; Methods</div>
+    <div class="quarto-category">Disease &amp; Clinical</div>
+    <div class="quarto-category">heatmap</div>
     <div class="quarto-category">Cell &amp; Tissue Models</div>
-    <div class="quarto-category">biofluids</div>
-    <div class="quarto-category">Biomarkers</div>
   </div>
   </div>
 
@@ -184,7 +183,7 @@ gtag('config', 'G-GVC1LWDBTL', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 21, 2026</p>
+      <p class="date">February 2, 2022</p>
     </div>
   </div>
   
@@ -196,55 +195,51 @@ gtag('config', 'G-GVC1LWDBTL', { 'anonymize_ip': true});
 </header>
 
 
-<p><strong>Background:</strong> High-throughput proteomics has dramatically improved biomedical research, but it came at cost of proteomics depth. The reason being, identifying thousands of proteins requires longer LC gradient times, which limits how many samples can be processed in a clinical or large-cohort setting. Additionally, the choice of data acquisition mode, whether DDA or DIA played an important role in shaping this trade-off. The introduction of the Orbitrap Astral mass spectrometer marked a significant turning point in resolving this trade-off. With the scan speeds up to 200 Hz and a highly parallelizable data acquisition mode, the Astral mass analyzer enables deep proteome coverage at speeds that were previously not achievable. This technical note, published in Journal of Proteome Research and carried out at the Precision Biomarker Laboratories, Cedars-Sinai Medical Center, presents a comprehensive workflow that benchmarks the Orbitrap Astrals performance across three major sample categories: biofluids (plasma, dried blood spots), cells (HeLa, PBMCs, HEK293) and tissues (mouse heart, liver, lung and intestine).</p>
+<p><strong>Background:</strong> SARS-CoV-2 infection significantly affects cardiovascular system, causing vascular damage, endothelial dysfunction and thromboembolic events — particularly in critically ill patients. Endothelial dysfunction is among the earliest cellular responses to COVID-19 and has been implicated in the long-term cardiovascular sequelae observed in a subset of patients. Despite this, the molecular mechanisms driving these changes in endothelial cells remained poorly understood. This study investigated proteome-level changes in endothelial colony-forming cells (ECFCs) — a well-characterized progenitor population with strong angiogenic capacity — following exposure to serum from COVID-19 patients across different stages of infection and disease severity.</p>
+<p><strong>Background on ECFCs:</strong> ECFCs are a rare progenitor population isolatable from peripheral blood that form highly proliferative, phenotypically endothelial colonies in culture — expressing CD31, VE-cadherin and vWF, adopting cobblestone morphology at confluence and retaining the capacity to form patent vessels <em>in vivo</em>. This combination of accessibility and documented responsiveness to systemic pathological stimuli makes them a tractable <em>in vitro</em> platform for modeling endothelial responses to disease, including those triggered by viral infection.</p>
 <p><strong>Methods:</strong></p>
 <ul>
-<li><p>Central to the workflow was automation at every step. For cell and tissue lysis, we leveraged Adaptive focused acoustics (AFA) technology on a Covaris LE220-plus sonicator for efficient and reproducible homogenization in a plate format without manual bead-beating steps. The protein digestion was automated using the SP3 (single-pot, solid-phase-enhanced sample preparation) protocol run on a Beckman i7 automated workstation. Each steps, from bead aliquoting and reduction to alkylation and overnight trypsin digestion was performed entirely on deck for 18 hours at 37 °C and 1200 rpm. Together, these automations significantly reduced human intervention while maximizing reproducibility across samples.</p></li>
-<li><p>Plasma samples were prepared using four different protocol to evaluate how complementary approaches can improve proteome depth in a sample type challenged by an exceptionally high dynamic range (over 10 to 12 orders of magnitude).</p>
-<ul>
-<li><p>naïve or undepleted,</p></li>
-<li><p>antibody-depleted (Top-14)</p></li>
-<li><p>perchloric acid (PerCA) precipitated</p></li>
-<li><p>Seer nanoparticle fractionation</p></li>
-</ul></li>
-<li><p>The digested peptides samples spanning cells, tissues and plasma prepared using different methods were separated using a 150 μm × 15 cm Evosep column (1.9 μm particle size, PepSep) coupled to the NeoVanquish LC system and analysed in DIA mode on Thermo’s Orbitrap Astral mass spectroemter. For each gradient length, two DIA window sizes were compared — a quantitation-optimised larger window (e.g., 3 Th for the 24 min gradient) and a smaller window (e.g., 2 Th) to assess the trade-off between identification depth and quantitative accuracy. The mass spectrometry raw files were searched against the UniProt human and mus musculus reviewed databases using DIA-NN v1.8.1 in library-free mode via in-house bioinformatics platform called ProEpic. To assess both proteome depth and technical reproducibility, a 3×3 study design (three replicates on three separate days) was applied to cells, tissue and biofluid proteome.</p></li>
+<li>ECFCs isolated from healthy donors were incubated <em>ex vivo</em> with serum collected from four distinct COVID-19 donor groups: <strong>PCR−/IgG−</strong> (COVID-19 negative controls, n=8), <strong>PCR+/IgG−</strong> (asymptomatic at peak infection, n=8), <strong>PCR−/IgG+</strong> (asymptomatic post-infection, n=8), and <strong>hospitalized critical patients</strong> (n=8).</li>
+<li>Following serum incubation, ECFC lysates were denatured in urea, reduced with dithiothreitol, alkylated with iodoacetamide and digested overnight with trypsin. Resulting peptides were analyzed by nano-LC–MS/MS on a timsTOF Pro mass spectrometer (Bruker Daltonics) coupled to a Easy nLC. Protein quantification was performed using a label-free quantification (LFQ) approach.</li>
+<li>Differentially expressed proteins were identified and subjected to pathway enrichment analysis, protein–protein interaction network analysis and comparison with published cardiovascular disease (CVD) protein signatures.</li>
 </ul>
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><img src="fig/Study-design.png" class="img-fluid figure-img"></p>
-<figcaption class="margin-caption">Graphical abstract. Comprehensive proteomics workflow benchmarking the Orbitrap Astral across diverse biospecimen types with automated sample preparation and DIA acquisition.</figcaption>
-</figure>
-</div>
-<p><strong>Results:</strong> The study delivered five notable findings.</p>
+<p><strong>Results:</strong> The analysis revealed distinct proteomic responses in ECFCs depending on the severity and stage of COVID-19 exposure:</p>
 <ul>
-<li><p><strong>Exceptional proteome depth at short gradient times.</strong> For HeLa cell digests, a 200 ng injection run on 45 min gradient covered approximately 90% of the expressed proteome, while an 8 min gradient delivered 78% as many identifications in less than 1/5 of the time. For cells and tissues analysed with a 24 min gradient, protein group identifications consistently exceeded 10,000. Importantly, the depth of coverage extended down to proteins present at approximately 100 copies per cell, with the lowest detected protein estimated at just 13 copies per cell. This level of sensitivity opens up detection of very low-abundance regulatory and signalling proteins that would be missed by less sensitive platforms.</p></li>
-<li><p><strong>DIA window size trade-offs depend on gradient length.</strong> Smaller DIA windows (2 Th) consistently yielded more protein identifications than larger windows (3 Th) but at the cost of quantitative precision. With a 24 min gradient, the 2 Th window noticeably skewed the CV distribution compared to 3 Th, though average CVs remained below 13% for HeLa cells and 20% for plasma (Fig 1). Importantly, this trade-off was far less pronounced at shorter gradient lengths, with 11 min gradient showed little practical difference between window sizes. This suggests that for high-throughput screening studies where throughput is prioritised, shorter gradients with larger windows offer an excellent balance of speed, depth and reproducibility, while longer gradients with smaller windows are better suited for discovery-focused experiments where maximum identification depth is the priority.</p></li>
+<li>Exposure to <strong>critical patient serum</strong> induced the most pronounced proteome alterations, with significant dysregulation of pathways linked to <strong>RNA metabolism</strong>, <strong>autophagy</strong> and <strong>cardiovascular disease</strong> — including changes in proteins involved in endothelial barrier integrity and vascular tone regulation.</li>
+<li><strong>Asymptomatic serum</strong> (both PCR+ and PCR−/IgG+) induced intermediate changes, highlighting that even subclinical infection triggers detectable endothelial responses at the proteome level.</li>
+<li>Network analysis of the altered proteins revealed several interactions with established CVD-associated proteins, providing a molecular basis for the cardiovascular complications observed in COVID-19.</li>
+<li>Proteins involved in <strong>autophagy regulation</strong> and <strong>viral response pathways</strong> were consistently altered across COVID-19 conditions, suggesting that ECFC responses to COVID-19 serum recapitulate aspects of the broader endothelial dysfunction seen clinically.</li>
 </ul>
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><img src="fig/Fig 1.png" class="img-fluid figure-img"></p>
-<figcaption class="margin-caption">A) CV distributions for naïve plasma and HeLa cells across three gradient lengths, each tested with two DIA window sizes (2 Th and 3 Th). Median %CVs are overlaid on each box plot. B) CV profiles across all identified proteins in naïve and depleted plasma, compared across 24- and 45-minute runs. FDA-approved circulating biomarkers are highlighted in red.</figcaption>
-</figure>
-</div>
-<ul>
-<li><p><strong>Quantitative reproducibility is strong, especially at shorter gradients.</strong> The reproducibility across HeLa injections was equally strong as more than 80% of proteins showed a coefficient of variation (CV) below 20%, a widely accepted benchmark for reliable quantification. Interestingly, shorter gradients produced tighter CV distributions than longer ones, likely because faster runs favor sharper chromatographic peaks. In naïve plasma, one of the most challenging sample types in proteomics — a 45-minute gradient still identified over 1,100 proteins with good quantitative precision. Between 91 and 122 FDA-approved circulating biomarkers were detected depending on the sample preparation and gradient length used, the vast majority were below 20% CV threshold (Fig 1). Even in naïve (undepleted) plasma — the most challenging condition — low-abundance markers including Mucin-16 (CA125), pancreatic triacylglycerol lipase (PNLIP) and CD36 were detectable.</p></li>
-<li><p><strong>Plasma depletion strategies are complementary.</strong> A direct comparison of naïve, antibody-depleted, PerCA-precipitated and Seer nanoparticle-treated plasma revealed that no single method fully overlapped with the others in protein identifications. It was observed that preparations were evidently complementary, each accessing a distinct slice of the plasma proteome (Fig 2). PerCA precipitation delivered over 1,500 identifications, competitive with antibody depletion, at considerably lower cost. The relative cost of these approaches is worth highlighting for cohort design decisions: PerCA &lt; antibody depletion &lt; nanoparticle fractionation. For large clinical cohorts where cost per sample is a real constraint, PerCA precipitation offers a practical route to deeper coverage without the expense of nanoparticle-based platforms. Each Seer nanoparticle replicate comprised five injections (one per nanoparticle fraction), an important detail when interpreting the depth figures for that preparation. Beyond plasma, dried blood spots were also included as a biofluid type, extending the workflow’s applicability to minimally invasive sample collection formats relevant in clinical and field settings.</p></li>
-</ul>
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><img src="fig/Fig 2.png" class="img-fluid figure-img"></p>
-<figcaption class="margin-caption">A) Protein abundance rank plots for naïve and depleted plasma using the 24-minute, 3 Th DIA method. B) Venn diagram showing protein identification overlap between naïve plasma and three depletion strategies — Top-14 antibody depletion, PerCA precipitation, and Seer Proteograph fractionation.</figcaption>
-</figure>
-</div>
-<ul>
-<li><strong>Challenging sample types — PBMCs and cardiac tissue.</strong> For PBMCs, the platform achieved close to 9,000 protein identifications on a 24-minute gradient, representing the most extensive proteome coverage reported for this cell type at this level of throughput. Reactome pathway enrichment of these identifications spanned metabolism, immune response, cell cycle and disease — reflecting the full range of cellular responses that could be interrogated in a high-throughput immunology setting. Cardiac tissue is notoriously difficult to profile deeply because high-abundant sarcomeric myofilament proteins, responsible for the heart’s contractile function masks low-abundance species, much albumin does in plasma. Despite this, over 10,000 protein groups were identified across murine tissues when searched together, corresponding to 8,928 unique proteins. Within heart tissue alone, more than 800 of the estimated 1,100–1,400 mitochondrial proteins were identified, demonstrating that the platform can access functionally important low-abundance compartments even in proteomically challenging matrices.</li>
-</ul>
-<p>Taken togther, this work establishes a robust, end-to-end platform — from automated sample preparation to deep DIA acquisition — that is practical for translational research at scale. The combination of AFA assisted lysis, automated SP3 digestion and the Orbitrap Astral directly addresses the bottlenecks that have historically limited large-cohort proteomics studies. The window size analysis provides concrete guidance for study design decisions and the plasma depletion comparison gives researchers a cost-aware framework for choosing the right preparation strategies. These findings carry direct implications for biomarker discovery programs where both depth and reproducibility across hundreds of patient samples are essential.</p>
-<p>The mass spectrometry data have been deposited in ProteomeXchange under dataset <a href="https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD054015">PXD054015</a>.</p>
-<p><strong>Full citation:</strong> Hendricks NG, Bhosale SD, Keoseyan AJ, Ortiz J, Stotland A, Seyedmohammad S, Nguyen CDL, Bui JT, Moradian A, Mockus SM, Van Eyk JE. An Inflection Point in High-Throughput Proteomics with Orbitrap Astral: Analysis of Biofluids, Cells, and Tissues. J Proteome Res. 2024;23(9):4163–4169. <a href="https://doi.org/10.1021/acs.jproteome.4c00384" class="uri">https://doi.org/10.1021/acs.jproteome.4c00384</a></p>
-<p><strong>Note:</strong> The custom R scripts and associated data frames are freely available at <a href="https://github.com/santoshdbhosale/R_scripts_Proteomics_analysis.git">https://github.com/santoshdbhosale/R_scripts_Proteomics_analysis</a> and were used to generate the figures presented in the above manuscript.</p>
+<p><strong>Data visualization:</strong></p>
+<blockquote class="blockquote">
+<p><strong>Data:</strong> ECFCs_Sig.tsv — a tab-separated matrix of statistically significant differentially expressed proteins (LFQ intensities) from label-free proteomics. Rows are protein groups, columns are 32 ECFC samples grouped across four COVID-19 severity conditions: PCR−/IgG− (controls), PCR+/IgG− (active infection), PCR−/IgG+ (post-infection) and hospitalized critical patients.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>The interactive heatmap below illustrates the differential protein expression patterns across the four patient serum groups, enabling direct visual comparison of the ECFC proteomic response from asymptomatic to critical COVID-19 infection. It was generated using the <a href="https://clustergrammer.readthedocs.io/">clustergrammer</a> widget within a Jupyter notebook and was not included in the original publication. This tool developed by the Ma’ayan Laboratory (Icahn School of Medicine at Mount Sinai). It supports hierarchical clustering and interactive exploration of high-dimensional biological data, and integrates cleanly into a notebook workflow — making it far more useful than a static heatmap for datasets of this scale.</p>
+</blockquote>
+<section id="interactive-heatmap-notebook" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-heatmap-notebook">Interactive Heatmap &amp; Notebook</h2>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td>🌐 Interactive Heatmap</td>
+<td><a href="https://santoshdbhosale.github.io/ECFCs/20220202_ECFCs.html">Click to explore</a></td>
+</tr>
+<tr class="even">
+<td>📓 View Notebook (static)</td>
+<td><a href="https://nbviewer.org/github/santoshdbhosale/ECFCs/blob/main/20220202_ECFCs.ipynb">nbviewer</a></td>
+</tr>
+<tr class="odd">
+<td>💻 GitHub Repository</td>
+<td><a href="https://github.com/santoshdbhosale/ECFCs">santoshdbhosale/ECFCs</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Full citation:</strong> Beltrán-Camacho L, Bhosale SD, Sánchez-Morillo D, Sánchez-Gomar I, Rojas-Torres M, Eslava-Alcón S, et al.&nbsp;Cardiovascular-related proteomic changes in ECFCs exposed to the serum of COVID-19 patients. <em>Int J Biol Sci.</em> 2023;19(6):1664–1681. <a href="https://doi.org/10.7150/ijbs.78864" class="uri">https://doi.org/10.7150/ijbs.78864</a></p>
+<p><strong>Mass spectrometry data:</strong> Available via ProteomeXchange at <a href="https://proteomecentral.proteomexchange.org/?pxid=PXD034620">PXD034620</a></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

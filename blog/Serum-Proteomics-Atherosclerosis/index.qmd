@@ -3,9 +3,9 @@ title: "Can Blood Proteins Reveal Hidden Risk of Carotid Atherosclerosis?"
 date: 2020-11-11
 categories:
   - publications
-  - serum
-  - carotid atherosclerosis
-  - biomarkers
+  - biofluids
+  - Disease & Clinical
+  - Biomarkers
 image: fig/roc-plot.png
 ---
 Atherosclerotic cardiovascular diseases are the major causes of mortality and morbidity in developed world. Thickening of the carotid arterial wall (plaque formation) are indicative of active atherosclerotic process. Myocardial infarction and stroke are the clinical events associated with an acute rupture of a critically located atherosclerotic plaque. Currently, ultrasonic assessment of carotid artery intima media thickness is used as a pre-clinical marker of the disease process. Nevertheless, atherosclerotic process may remain asymptomatic for several decades and whether thickening of intima-media layer of carotid artery and carotid plaque represents two different phenotypes or single traits of disease process is still unclear. 

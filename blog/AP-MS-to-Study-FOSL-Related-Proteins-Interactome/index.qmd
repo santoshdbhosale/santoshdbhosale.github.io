@@ -3,8 +3,7 @@ title: "Decoding FOSL Protein Interactions in T Cells Using Affinity Purificatio
 date: 2021-09-16
 categories:
   - publications
-  - T cells
-  - PPIs
+  - Cell & Tissue Models
 image: fig/FOSL-interactors.png
 ---
 

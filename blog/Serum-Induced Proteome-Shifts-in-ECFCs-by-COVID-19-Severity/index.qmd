@@ -1,0 +1,46 @@
+---
+title: "Clustergrammer Heatmap of ECFC Proteomics Across COVID-19 Severity Groups"
+date: "2022-02-02"
+categories: 
+  - publications
+  - Proteomics & Methods
+  - Disease & Clinical
+  - heatmap
+  - Cell & Tissue Models
+image: fig/ecfcs.png
+---
+
+**Background:** SARS-CoV-2 infection significantly affects cardiovascular system, causing vascular damage, endothelial dysfunction and thromboembolic events — particularly in critically ill patients. Endothelial dysfunction is among the earliest cellular responses to COVID-19 and has been implicated in the long-term cardiovascular sequelae observed in a subset of patients. Despite this, the molecular mechanisms driving these changes in endothelial cells remained poorly understood. This study investigated proteome-level changes in endothelial colony-forming cells (ECFCs) — a well-characterized progenitor population with strong angiogenic capacity — following exposure to serum from COVID-19 patients across different stages of infection and disease severity.
+
+**Background on ECFCs:** ECFCs are a rare progenitor population isolatable from peripheral blood that form highly proliferative, phenotypically endothelial colonies in culture — expressing CD31, VE-cadherin and vWF, adopting cobblestone morphology at confluence and retaining the capacity to form patent vessels *in vivo*. This combination of accessibility and documented responsiveness to systemic pathological stimuli makes them a tractable *in vitro* platform for modeling endothelial responses to disease, including those triggered by viral infection.
+
+**Methods:**
+
+-   ECFCs isolated from healthy donors were incubated *ex vivo* with serum collected from four distinct COVID-19 donor groups: **PCR−/IgG−** (COVID-19 negative controls, n=8), **PCR+/IgG−** (asymptomatic at peak infection, n=8), **PCR−/IgG+** (asymptomatic post-infection, n=8), and **hospitalized critical patients** (n=8).
+-   Following serum incubation, ECFC lysates were denatured in urea, reduced with dithiothreitol, alkylated with iodoacetamide and digested overnight with trypsin. Resulting peptides were analyzed by nano-LC–MS/MS on a timsTOF Pro mass spectrometer (Bruker Daltonics) coupled to a Easy nLC. Protein quantification was performed using a label-free quantification (LFQ) approach.
+-   Differentially expressed proteins were identified and subjected to pathway enrichment analysis, protein–protein interaction network analysis and comparison with published cardiovascular disease (CVD) protein signatures.
+
+**Results:** The analysis revealed distinct proteomic responses in ECFCs depending on the severity and stage of COVID-19 exposure:
+
+-   Exposure to **critical patient serum** induced the most pronounced proteome alterations, with significant dysregulation of pathways linked to **RNA metabolism**, **autophagy** and **cardiovascular disease** — including changes in proteins involved in endothelial barrier integrity and vascular tone regulation.
+-   **Asymptomatic serum** (both PCR+ and PCR−/IgG+) induced intermediate changes, highlighting that even subclinical infection triggers detectable endothelial responses at the proteome level.
+-   Network analysis of the altered proteins revealed several interactions with established CVD-associated proteins, providing a molecular basis for the cardiovascular complications observed in COVID-19.
+-   Proteins involved in **autophagy regulation** and **viral response pathways** were consistently altered across COVID-19 conditions, suggesting that ECFC responses to COVID-19 serum recapitulate aspects of the broader endothelial dysfunction seen clinically.
+
+**Data visualization:**
+
+> **Data:** ECFCs_Sig.tsv — a tab-separated matrix of statistically significant differentially expressed proteins (LFQ intensities) from label-free proteomics. Rows are protein groups, columns are 32 ECFC samples grouped across four COVID-19 severity conditions: PCR−/IgG− (controls), PCR+/IgG− (active infection), PCR−/IgG+ (post-infection) and hospitalized critical patients.
+
+> The interactive heatmap below illustrates the differential protein expression patterns across the four patient serum groups, enabling direct visual comparison of the ECFC proteomic response from asymptomatic to critical COVID-19 infection. It was generated using the [clustergrammer](https://clustergrammer.readthedocs.io/) widget within a Jupyter notebook and was not included in the original publication. This tool developed by the Ma'ayan Laboratory (Icahn School of Medicine at Mount Sinai). It supports hierarchical clustering and interactive exploration of high-dimensional biological data, and integrates cleanly into a notebook workflow — making it far more useful than a static heatmap for datasets of this scale.
+
+## Interactive Heatmap & Notebook
+
+|                           |                                                                                              |
+|------------------------------------|------------------------------------|
+| 🌐 Interactive Heatmap    | [Click to explore](https://santoshdbhosale.github.io/ECFCs/20220202_ECFCs.html)              |
+| 📓 View Notebook (static) | [nbviewer](https://nbviewer.org/github/santoshdbhosale/ECFCs/blob/main/20220202_ECFCs.ipynb) |
+| 💻 GitHub Repository      | [santoshdbhosale/ECFCs](https://github.com/santoshdbhosale/ECFCs)                            |
+
+**Full citation:** Beltrán-Camacho L, Bhosale SD, Sánchez-Morillo D, Sánchez-Gomar I, Rojas-Torres M, Eslava-Alcón S, et al. Cardiovascular-related proteomic changes in ECFCs exposed to the serum of COVID-19 patients. *Int J Biol Sci.* 2023;19(6):1664–1681. <https://doi.org/10.7150/ijbs.78864>
+
+**Mass spectrometry data:** Available via ProteomeXchange at [PXD034620](https://proteomecentral.proteomexchange.org/?pxid=PXD034620)

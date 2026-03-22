@@ -12,6 +12,8 @@ listing:
       - "AP-MS-to-Study-FOSL-Related-Proteins-Interactome/index.qmd"
       - "Serum-Proteomics-of-mother-infant-dyads-T1D-risk/index.qmd"
       - "An-Inflection-Point-In-High-Throughput-Proteomics-With-Orbitrap-Astral/index.qmd"
+      - "Intestinal-Organoid-Proteome-Map-ENRC-and-ENRI-Cell-States/index.qmd"
+      - "Serum-Induced Proteome-Shifts-in-ECFCs-by-COVID-19-Severity/index.qmd"
     sort: "date desc"
     categories: true
 toc-title: Year

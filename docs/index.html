@@ -623,6 +623,85 @@ gtag('config', 'G-GVC1LWDBTL', { 'anonymize_ip': true});
   }
   .view-all:hover { gap: 0.5rem; text-decoration: none; }
 
+  /* ── INTERACTIVE HEATMAPS ── */
+  .heatmaps { margin-bottom: 4rem; }
+  .heatmap-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  @media (max-width: 600px) { .heatmap-grid { grid-template-columns: 1fr; } }
+  .heatmap-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.5rem 1.4rem;
+    transition: box-shadow 0.18s, transform 0.18s, border-color 0.18s;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .heatmap-card:hover {
+    box-shadow: 0 6px 24px rgba(26,26,46,0.08);
+    transform: translateY(-2px);
+    border-color: rgba(37,99,235,0.2);
+  }
+  .heatmap-icon { font-size: 1.6rem; }
+  .heatmap-topic {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+  }
+  .heatmap-title {
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: var(--ink);
+    line-height: 1.4;
+  }
+  .heatmap-desc {
+    font-size: 0.84rem;
+    color: var(--ink-muted);
+    line-height: 1.7;
+    flex-grow: 1;
+  }
+  .heatmap-links {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.4rem;
+  }
+  .heatmap-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.76rem;
+    font-weight: 600;
+    padding: 0.38rem 0.85rem;
+    border-radius: 8px;
+    text-decoration: none !important;
+    transition: background 0.18s, transform 0.15s;
+    letter-spacing: 0.01em;
+  }
+  .heatmap-btn-primary {
+    background: var(--accent);
+    color: white !important;
+  }
+  .heatmap-btn-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+  }
+  .heatmap-btn-secondary {
+    background: var(--surface-2);
+    color: var(--ink-muted) !important;
+    border: 1px solid var(--border);
+  }
+  .heatmap-btn-secondary:hover {
+    background: #e8e4de;
+    transform: translateY(-1px);
+  }
+
   /* ── AWARDS ── */
   .awards { margin-bottom: 4rem; }
   .awards-grid {
@@ -885,6 +964,40 @@ gtag('config', 'G-GVC1LWDBTL', { 'anonymize_ip': true});
     <a href="cv/index.html" class="view-all">View all 20+ publications and patent →</a>
   </div>
 
+  <!-- ── INTERACTIVE HEATMAPS ── -->
+  <div class="heatmaps">
+    <p class="sec-label">Data Visualizations</p>
+    <h2 class="sec-title anchored">Interactive Proteomics Heatmaps</h2>
+    <div class="heatmap-grid">
+      <div class="heatmap-card">
+        <div class="heatmap-icon">🧫</div>
+        <div class="heatmap-topic">Organoids · Celiac Disease</div>
+        <div class="heatmap-title">Mini-gut Organoid Proteomics</div>
+        <div class="heatmap-desc">
+          4,850 protein groups across crypt-like (ENRC) and differentiated enterocyte-like (ENRI) organoid states, cross-compared to human celiac disease biopsy markers. Companion data to <em>Front. Mol. Biosci.</em> 2024.
+        </div>
+        <div class="heatmap-links">
+          <a href="https://santoshdbhosale.github.io/MG/20210309_MG.html" class="heatmap-btn heatmap-btn-primary" target="_blank">Explore Heatmap →</a>
+          <a href="blog/MG-Organoid-Celiac-Proteomics/" class="heatmap-btn heatmap-btn-secondary">Blog Post</a>
+          <a href="https://github.com/santoshdbhosale/MG" class="heatmap-btn heatmap-btn-secondary" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="heatmap-card">
+        <div class="heatmap-icon">🩸</div>
+        <div class="heatmap-topic">ECFCs · COVID-19</div>
+        <div class="heatmap-title">ECFC Proteomics — COVID-19 Severity</div>
+        <div class="heatmap-desc">
+          Proteomic changes in endothelial colony-forming cells exposed to serum from COVID-19 patients across four severity groups — asymptomatic to critically ill. Companion data to <em>Int J Biol Sci.</em> 2023.
+        </div>
+        <div class="heatmap-links">
+          <a href="https://santoshdbhosale.github.io/ECFCs/20220202_ECFCs.html" class="heatmap-btn heatmap-btn-primary" target="_blank">Explore Heatmap →</a>
+          <a href="blog/ECFCs-COVID-Proteomics/" class="heatmap-btn heatmap-btn-secondary">Blog Post</a>
+          <a href="https://github.com/santoshdbhosale/ECFCs" class="heatmap-btn heatmap-btn-secondary" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ── AWARDS ── -->
   <div class="awards">
     <p class="sec-label">Recognition</p>
@@ -927,7 +1040,6 @@ gtag('config', 'G-GVC1LWDBTL', { 'anonymize_ip': true});
       </div>
     </div>
   </div>
-
 
 </div>
 

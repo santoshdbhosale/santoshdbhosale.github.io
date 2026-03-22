@@ -3,12 +3,10 @@ title: "Orbitrap Astral: A New Era for High-Throughput Proteomics?"
 date: 2026-03-21
 categories:
   - publications
-  - benchmarking
-  - Orbitrap astral
+  - Proteomics & Methods
+  - Cell & Tissue Models
   - biofluids
-  - cells
-  - tissues
-  - FDA-approved biomarkers
+  - Biomarkers
 image: fig/Study-design.png
 ---
 

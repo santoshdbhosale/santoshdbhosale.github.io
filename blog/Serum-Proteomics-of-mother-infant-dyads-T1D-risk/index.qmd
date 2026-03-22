@@ -3,8 +3,8 @@ title: "Tracking Type 1 Diabetes Risk from Mother to Infant via Serum Proteomics
 date: 2024-06-21
 categories:
   - publications
-  - serum
-  - type 1 diabetes
+  - biofluids
+  - Disease & Clinical
 image: fig/Study-design.png
 ---
 

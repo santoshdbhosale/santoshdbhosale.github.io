@@ -1,0 +1,46 @@
+---
+title: "Visualizing Organoid Proteomics Data Interactively with Clustergrammer"
+date: 2021-03-09
+categories:
+  - publications
+  - Proteomics & Methods
+  - Cell & Tissue Models
+  - Disease & Clinical
+  - heatmap
+image: fig/mg.png
+---
+
+**Background:** Celiac disease (CD) is an autoimmune disease triggered by gluten exposure, characterized by the progressive disruption of the intestinal epithelium, specifically, impaired differentiation of the crypt–villus axis. A key challenge in studying CD is accessing the intestinal compartment without the confounding complexity of extra-epithelial tissue. Organoid models address this by enabling three-dimensional, *in vitro* representation of the intestinal epithelium from Lgr5+ intestinal stem cells. We used a mouse mini-gut organoid model to characterize the proteomes of two key intestinal states — crypt-like (ENRC) and differentiated enterocyte-like (ENRI) cells — and crossed these findings against published human CD biopsy data to identify disease-relevant markers.
+
+**Methods:**
+
+-   Mouse Lgr5+ intestinal stem cells were grown in Matrigel, with variation of Wnt signaling to establish two distinct organoid states: **ENRC** (crypt-like, Wnt-stimulated) and **ENRI** (differentiated enterocyte-like, Wnt-inhibited).
+-   Following filter-assisted sample preparation (FASP), tryptic digested peptides from cellular lysates of three biological replicates were analyzed by LC–MS/MS on a Q Exactive HF in data-dependent acquisition (DDA) mode.
+-   Label-free quantification (MaxLFQ) was performed using MaxQuant and statistical comparisons were made using the reproducibility-optimized test statistic (ROTS) at FDR ≤ 0.05.
+-   The detected proteome was cross-compared against two published human CD biopsy datasets: (i) genome-wide RNA-seq from PaxFPE duodenal biopsies after gluten challenge and (ii) proteomics from FFPE biopsies before and after a 14-day gluten challenge, including laser capture microdissection (LCM) of the epithelial compartment.
+
+**Results:** The analysis identified 4,850 protein groups, with 74% significantly changing between the two organoid states. Key findings included:
+
+-   **ENRC (crypt-like) cells** were enriched in proteins associated with DNA replication, mitosis and stem cell maintenance — including all six members of the DNA replication licensing factor MCM complex (MCM2–7), which were also upregulated in the gluten-challenge biopsy data.
+-   **ENRI (differentiated) cells** showed strong enrichment of brush border enzymes and nutrient transporters — trehalase, angiotensin-converting enzyme (ACE), intestinal fatty acid-binding protein (FABP2) and solute carrier families — which were correspondingly downregulated in CD biopsies, consistent with the loss of mature enterocytes.
+-   Cross-comparison with the CD biopsy data revealed that markers of the undifferentiated, crypt-like state were predominantly upregulated (165 of 181), while enterocyte-like markers were predominantly downregulated (191 of 221), together reflecting crypt hyperplasia and villus atrophy — hallmarks of active CD.
+-   The data also highlighted proteins with more complex behavior, such as the polymeric immunoglobulin receptor (PIGR), which was enriched in ENRI cells yet upregulated in the biopsy gluten challenge, possibly linked to disruption of the IgA transcytosis axis in CD.
+-   The detected proteome included 280 enterocyte, 128 tuft cell, 45 stem cell and 15 Paneth cell markers, collectively affirming the organoid model's representativeness of the intestinal epithelium.
+
+**Data visualization:**
+
+> **Data:** Input file: MG.tsv — a tab-separated matrix of label-free quantification (LFQ) protein intensities exported from Perseus after MaxQuant processing. Rows are protein groups, columns are six biological replicates across two organoid states — three crypt-like (ENRC1–3) and three enterocyte-like (ENRI1–3).
+
+> The interactive heatmap below visualizes Z-score normalized protein intensities across ENRC and ENRI cells for a curated set of intestinal cell-type markers, sorted by their anticipated anatomical location (crypt vs. villus). It was generated using the [clustergrammer](https://clustergrammer.readthedocs.io/) widget within a Jupyter notebook and was not included in the original publication. This tool developed by the Ma'ayan Laboratory (Icahn School of Medicine at Mount Sinai). It supports hierarchical clustering and interactive exploration of high-dimensional biological data, and integrates cleanly into a notebook workflow — making it far more useful than a static heatmap for datasets of this scale.
+
+## Interactive Heatmap & Notebook
+
+|                           |                                                                                        |
+|------------------------------------|------------------------------------|
+| 🌐 Interactive Heatmap    | [Click to explore](https://santoshdbhosale.github.io/MG/20210309_MG.html)              |
+| 📓 View Notebook (static) | [nbviewer](https://nbviewer.org/github/santoshdbhosale/MG/blob/main/20210309_MG.ipynb) |
+| 💻 GitHub Repository      | [santoshdbhosale/MG](https://github.com/santoshdbhosale/MG)                            |
+
+**Full citation:** Moulder R\*, Bhosale SD\*, Viiri K, Lahesmaa R. Comparative proteomics analysis of the mouse mini-gut organoid: insights into markers of gluten challenge from celiac disease intestinal biopsies. *Front. Mol. Biosci.* 2024;11:1446822. <https://doi.org/10.3389/fmolb.2024.1446822>
+
+**Mass spectrometry data:** Available via ProteomeXchange at [PXD025690](https://www.ebi.ac.uk/pride/archive/projects/PXD025690).
