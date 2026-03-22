@@ -5,6 +5,7 @@ categories:
   - publications
   - serum
   - type 1 diabetes
+  - biomarkers
 image: fig/tsp.png
 ---
 
