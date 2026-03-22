@@ -4,6 +4,7 @@ website:
   title: "Santosh D. Bhosale"
   description: "Proteomics scientist & AI/ML drug discovery lead. PhD · 15+ years · 20+ publications · Partex.ai"
   image: img/sdb.png
+  google-analytics: "G-GVC1LWDBTL"
   
   # start of the navigation bar at the top of the website
   navbar:
