@@ -15,7 +15,7 @@ website:
     left:
       - text: "About"
         href: about/index.qmd
-      - text: "Academic"
+      - text: "CV & Docs"
         menu:
           - text: "CV (Web)"
             href: cv/index.qmd
@@ -24,6 +24,8 @@ website:
           - text: "---"
           - text: "PhD Thesis"
             href: cv/Thesis.pdf
+      - text: "Research"
+        href: network/index.qmd
       - text: "Blog"
         href: blog/index.qmd
     
@@ -49,6 +51,8 @@ project:
   output-dir: docs
   resources:
     - "cv/*.pdf"
+    - "network/libs/**" 
+    - "network/research_network.html"
   preview: 
     port: 22222
     browser: true

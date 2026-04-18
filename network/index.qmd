@@ -1,0 +1,14 @@
+---
+title: "Research Network"
+format:
+  html:
+    page-layout: full
+    toc: false
+---
+
+<iframe 
+  src="research_network.html"
+  width="100%" 
+  height="950px" 
+  style="border:none; display:block;">
+</iframe>
