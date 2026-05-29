@@ -14,6 +14,7 @@ listing:
       - "An-Inflection-Point-In-High-Throughput-Proteomics-With-Orbitrap-Astral/index.qmd"
       - "Intestinal-Organoid-Proteome-Map-ENRC-and-ENRI-Cell-States/index.qmd"
       - "Serum-Induced Proteome-Shifts-in-ECFCs-by-COVID-19-Severity/index.qmd"
+      - "Serum-and-CSF-Proteomics-Uncover-the-Molecular-Face-of-IIH/index.qmd"
     sort: "date desc"
     categories: true
 toc-title: Year
