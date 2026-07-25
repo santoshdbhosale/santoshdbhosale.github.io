@@ -728,6 +728,22 @@ format:
     <h2 class="sec-title">Selected Publications</h2>
     <div class="pub-list">
       <div class="pub-card">
+        <div class="pub-year">2026</div>
+        <div>
+          <div class="pub-title">Idiopathic Intracranial Hypertension Is Characterized by a Distinct Proteomic Profile</div>
+          <div class="pub-authors">Bhosale SD, Nawrocki A, et al. · Ann Neurol</div>
+        </div>
+        <span class="pub-badge badge-biomarkers">Biomarkers</span>
+      </div>
+      <div class="pub-card">
+        <div class="pub-year">2026</div>
+        <div>
+          <div class="pub-title">Modeling Synaptic Maturation From Growth Cone to Synapse in Human Organoids</div>
+          <div class="pub-authors">Øhlenschlæger MS, Bhosale S, et al. · J Neurochem</div>
+        </div>
+        <span class="pub-badge badge-technology">Technology</span>
+      </div>
+      <div class="pub-card">
         <div class="pub-year">2024</div>
         <div>
           <div class="pub-title">An Inflection Point in High-Throughput Proteomics with Orbitrap Astral: Analysis of Biofluids, Cells, and Tissues</div>
@@ -768,7 +784,7 @@ format:
         <span class="pub-badge badge-biomarkers">Biomarkers</span>
       </div>
     </div>
-    <a href="cv/index.html" class="view-all">View all 20+ publications and patent →</a>
+    <a href="cv/index.html" class="view-all">View all 24 publications and patent →</a>
   </div>
 
   <!-- ── INTERACTIVE HEATMAPS ── -->
