@@ -385,6 +385,11 @@ format:
     color: var(--accent);
     vertical-align: super;
   }
+  .org-text {
+    font-weight: 600;
+    color: var(--ink-muted);
+    font-size: 0.86rem;
+  }
 
   /* ── PUBLICATIONS ── */
   .publications { margin-bottom: 4rem; }
@@ -569,6 +574,7 @@ format:
   .org-cell { display: flex; align-items: center; justify-content: flex-start; min-height: 50px; }
   .org-logo { width: auto; object-fit: contain; display: block; flex-shrink: 0; }
   .logo-partex { height: 28px; max-width: 150px; }
+  .logo-persistent { height: 26px; max-width: 160px; }
   .logo-pbl    { height: 40px; max-width: 200px; }
   .logo-sdu    { height: 50px; max-width: 95px; }
   .logo-btk    { height: 36px; max-width: 145px; }
@@ -589,9 +595,9 @@ format:
     </div>
     <div>
       <h1 class="hero-name">Santosh D. Bhosale</h1>
-      <p class="hero-role">Proteomics Scientist &nbsp;·&nbsp; AI/ML Drug Discovery</p>
+      <p class="hero-role">Proteomics Scientist &nbsp;·&nbsp; AI/ML Drug Discovery &nbsp;·&nbsp; Scientific Project Leadership</p>
       <p class="hero-bio">
-        A <strong>pharmacist-turned-proteomics scientist</strong> with a PhD and 15+ years spanning wet-lab mass spectrometry, computational proteomics, and AI/ML for drug discovery. Bridging deep domain biology with scalable data pipelines.
+        A <strong>pharmacist-turned-proteomics scientist</strong> with a PhD and 15+ years spanning wet-lab mass spectrometry, computational proteomics, and AI/ML for drug discovery. Bridging deep domain biology with scalable data pipelines, client-facing insight generation, and project leadership.
       </p>
       <div class="hero-ctas">
         <a href="cv/index.html" class="btn-primary-sm">View CV →</a>
@@ -604,7 +610,7 @@ format:
   <div class="currently">
     <div class="c-dot"></div>
     <div>
-      <strong>Currently:</strong> Product Manager I (Growth) at <strong>Partex.ai (formerly Innoplexus), Pune</strong> — Spearheading a biomarker discovery module powered by omics data and Llama &amp; Gemini LLMs, accelerating indication prioritisation, drug-target identification, and explainable clinical trial outcome prediction.
+      <strong>Currently:</strong> Domain Expert at <strong>Persistent Systems</strong> — bringing scientific and clinical domain expertise to patient-data driven healthcare analytics engagements.
     </div>
   </div>
 
@@ -656,13 +662,14 @@ format:
         </div>
       </div>
       <div class="exp-card">
-        <span class="exp-icon">📦</span>
-        <div class="exp-title">Product &amp; Project Management</div>
-        <div class="exp-desc">Developing biomarker module that underpins target identification, indication prioritisation, and clinical trial prediction, stakeholder management.</div>
+        <span class="exp-icon">🧭</span>
+        <div class="exp-title">Scientific Project Leadership</div>
+        <div class="exp-desc">Domain expertise on patient-data healthcare analytics engagements — client communication, requirements definition, and insight generation, plus scientific project management, mentorship, and training of teams.</div>
         <div class="exp-tags">
-          <span class="exp-tag">Product Mgmt</span>
-          <span class="exp-tag">SOW Delivery</span>
-          <span class="exp-tag">Stakeholders</span>
+          <span class="exp-tag">Client Communication</span>
+          <span class="exp-tag">Requirements</span>
+          <span class="exp-tag">Mentorship</span>
+          <span class="exp-tag">Training</span>
         </div>
       </div>
     </div>
@@ -683,7 +690,13 @@ format:
       </thead>
       <tbody>
         <tr class="current-row">
-          <td class="year-cell">2025–present</td>
+          <td class="year-cell">2026–present</td>
+          <td class="role-cell">Domain Expert – Scientific Project Lead</td>
+          <td><div class="org-cell"><img src="img/persistent.png" alt="Persistent Systems" class="org-logo logo-persistent" /></div></td>
+          <td>Pune, India</td>
+        </tr>
+        <tr>
+          <td class="year-cell">2025–2026</td>
           <td class="role-cell">Product Manager I – Growth</td>
           <td><div class="org-cell"><img src="img/partex.png" alt="Partex.ai" class="org-logo logo-partex" /></div></td>
           <td>Pune, India</td>
