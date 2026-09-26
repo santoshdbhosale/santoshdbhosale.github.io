@@ -19,7 +19,7 @@ PhD-trained mass spectrometry researcher turned AI/ML drug discovery lead. I bri
 
 ### 📍 Currently
 
-Product Manager I (Growth) at **Partex.ai** (formerly Innoplexus), Pune — integrating Llama & Gemini LLMs with omics data pipelines to accelerate pharmaceutical drug discovery.
+Domain Expert – Scientific Project Lead at **Persistent Systems**, Pune — leveraging clinical and multi-omics data to drive patient-centric healthcare analytics and precision medicine engagements.
 
 ---
 

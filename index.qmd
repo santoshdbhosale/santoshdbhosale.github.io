@@ -336,13 +336,18 @@ format:
 
   /* ── CAREER TABLE ── */
   .career { margin-bottom: 4rem; }
+  .career-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+  }
   .career-table {
     width: 100%;
+    min-width: 560px;
     border-collapse: collapse;
     background: var(--white);
-    border-radius: 14px;
-    overflow: hidden;
-    border: 1px solid var(--border);
     font-size: 0.88rem;
   }
   .career-table thead tr { background: var(--surface-2); }
@@ -389,6 +394,11 @@ format:
     font-weight: 600;
     color: var(--ink-muted);
     font-size: 0.86rem;
+  }
+  @media (max-width: 560px) {
+    .career-table { min-width: 480px; font-size: 0.82rem; }
+    .career-table th, .career-table td { padding: 0.7rem 0.9rem; }
+    .career-table th:nth-child(3), .career-table td:nth-child(3) { width: 170px; }
   }
 
   /* ── PUBLICATIONS ── */
@@ -679,6 +689,7 @@ format:
   <div class="career">
     <p class="sec-label">Experience</p>
     <h2 class="sec-title">Career Highlights</h2>
+    <div class="career-table-wrap">
     <table class="career-table">
       <thead>
         <tr>
@@ -733,6 +744,7 @@ format:
         </tr>
       </tbody>
     </table>
+    </div>
   </div>
 
   <!-- ── PUBLICATIONS ── -->
