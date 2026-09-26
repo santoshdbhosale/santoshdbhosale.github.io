@@ -2,7 +2,7 @@
 
 **Proteomics Scientist → AI/ML Drug Discovery Lead**
 
-PhD-trained mass spectrometry researcher turned AI/ML drug discovery lead. I bridge 15+ years of wet-lab proteomics expertise with LLM-integrated pipelines — building biomarker discovery modules that translate multi-omics data into pharmaceutical decisions.
+PhD-trained mass spectrometry researcher turned AI/ML drug discovery lead. I bridge 15+ years of wet-lab proteomics expertise with LLM-integrated pipelines that translate multi-omics data into pharmaceutical decisions.
 
 > *"From identifying proteomics biomarkers for disease to leading multi-omics biomarker platforms — the question hasn't changed, only the scale has."*
 
@@ -19,7 +19,7 @@ PhD-trained mass spectrometry researcher turned AI/ML drug discovery lead. I bri
 
 ### 📍 Currently
 
-Product Manager I (Growth) at **Partex.ai** (formerly Innoplexus), Pune — integrating Llama & Gemini LLMs with omics data pipelines to accelerate pharmaceutical drug discovery.
+Domain Expert – Scientific Project Lead at **Persistent Systems**, Pune — leveraging clinical and multi-omics data to drive patient-centric healthcare analytics and precision medicine engagements.
 
 ---
 
