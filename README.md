@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Hi, I'm Santosh D. Bhosale 👋
 
 **Proteomics Scientist → AI/ML Drug Discovery Lead**
