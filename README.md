@@ -49,6 +49,6 @@ Thanks [Marvin Schmitt](https://www.marvinschmitt.com/) for the excellent docume
 
 Furthere changes into the site were introduced by using Gemini Pro and Claude.
 
-The blog post listing is based on the website source of [Andrew Heiss](https://www.andrewheiss.com/), who has put together an incredible listing template under CC-BY-SA 4.0 license. Thank you!
+### The blog post listing is based on the website source of [Andrew Heiss](https://www.andrewheiss.com/), who has put together an incredible listing template under CC-BY-SA 4.0 license. Thank you!
 =======
 
