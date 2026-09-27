@@ -236,7 +236,7 @@ format:
   <!-- ── PHILOSOPHY STATEMENT ── -->
   <div class="philosophy-statement">
     <blockquote class="phil-quote">
-      "From identifying proteomics biomarkers for disease to leading multi-omics biomarker platforms — the question hasn't changed, only the scale has."
+      "From identifying proteomics biomarkers for disease to driving multi-omics analytics for precision medicine — the question hasn't changed, only the scale has."
     </blockquote>
   </div>
 
